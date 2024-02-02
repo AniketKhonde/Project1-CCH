@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraftHub/Javascript</title>
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <link rel="stylesheet" href="../CSS-files/javascript-doc.css">
+    <script src="../javascript-files/javascript-doc.js"></script>
+</head>
+<body>
+    <div class="container" id="javascript-doc">
+        <div class="navbar">
+            <h3 class="heading-navigation">Introduction</h3>
+            <span onclick="showChapter(1)">JS Introduction</span>
+            <span onclick="showChapter(2)">JS Execution</span>
+            <span onclick="showChapter(3)">Node.js Installation</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">Javascript Basics</h3>
+            <span onclick="showChapter(4)">JS Variables</span>
+            <span onclick="showChapter(5)">Primitives and Objects</span>
+            <span onclick="showChapter(6)">var vs let vs const</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">Javascript Basics</h3>
+            <span onclick="showChapter(7)">id else Conditionals</span>
+            <span onclick="showChapter(8)">if else ladder</span>
+            <span onclick="showChapter(9)">Switch case</span>
+            <span onclick="showChapter(10)">Ternary Operator</span>
+            <span onclick="showChapter(11)">For Loops</span>
+            <span onclick="showChapter(12)">While Loops</span>
+            <span onclick="showChapter(13)">Functions</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">Javascript Objects</h3>
+            <span onclick="showChapter(14)">String and Array</span>
+            <span onclick="showChapter(15)">Map, Filter and Reduce</span>
+            <!-- Add more spans for additional chapters -->
+            <h3 class="heading-navigation">Javascript OOPs</h3>
+            <span onclick="showChapter(16)">JS Class</span>
+            <span onclick="showChapter(17)">JS Objects</span>
+            <span onclick="showChapter(18)">Constructor</span>
+            <span onclick="showChapter(19)">Static Method</span>
+            <span onclick="showChapter(20)">Enscapsulation</span>
+            <span onclick="showChapter(21)">Inheritance</span>
+            <span onclick="showChapter(22)">Polymorphism</span>
+            <span onclick="showChapter(23)">Abstraction</span>
+
+        </div>
+
+        <main class="contentarea">
+            <div class="buttons top-btn">
+                <button id="prevBtn" class="btn" onclick="prevChapter()">Previous</button>
+                <button id="Homebtn" class="btn" onclick="changePage8()">Home</button>
+                <button id="nextBtn" class="btn" onclick="nextChapter()">Next</button>
+            </div>
+            <div id="content">
+                <h2>Welcome to My Course!</h2>
+                <p>This is the default content. Click on the chapters to change the content.</p>
+            </div>
+            <div class="buttons bottom-btn">
+                <button id="prevBtn1" class="btn" onclick="prevChapter()">Previous</button>
+                <button id="Homebtn1" class="btn" onclick="changePage8()">Home</button>
+                <button id="nextBtn1" class="btn" onclick="nextChapter()">Next</button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Define content for each chapter -->
+    <div id="chapter1" style="display: none;">
+        <h1>JS Introduction</h1>
+
+        <p>
+          Today, I am creating this JavaScript tutorial to provide you with a resource that will help you learn JavaScript. Also, you can use this tutorial as a reference later to lookup various concepts and code.
+        </p>
+      
+        <p>
+          My name is Harry, and I am a Computer Programmer and a YouTuber from CodeWithHarry YouTube channel. I want to start this tutorial by explaining why we need JavaScript at the first place.
+        </p>
+      
+        <p>
+          Imagine a website as a house. HTML is like the bricks and walls that give it structure. CSS is like the paint and decorations that make it look nice. But without JavaScript, the house won't have any lights or running water—nothing would work or move.
+        </p>
+      
+        <p>
+          JavaScript is what makes a website interactive. It's like adding electricity to the house. It lets you click buttons to open doors, turn on lights, or even play music. So, without JavaScript, a website would be like a house where nothing really happens—you could look at it. The video below shows a modal which is created using JavaScript
+        </p>
+      
+        <p>
+          JavaScript is used for frontend programming but it is also used for backend programming using Node.js. Let's take a step back and understand all these concepts one by one.
+        </p>
+      
+        <h2>What is Programming?</h2>
+      
+        <p>
+          It is a way to talk to computers. A language like Hindi, English, or Bengali can be used to talk to a human but for computers, we need straightforward instructions.
+        </p>
+      
+        <p>
+          Programming is the act of constructing a program, a set of precise instructions telling a computer what to do.
+        </p>
+      
+        <p>
+          Programming is the process of designing, writing, testing, debugging, and maintaining the source code of computer programs. It involves the use of programming languages and various tools to create software programs that can be run on a computer or other devices.
+        </p>
+      
+        <h2>What is ECMAScript?</h2>
+      
+        <p>
+          ECMAScript is a standard on which JavaScript is based!
+        </p>
+      
+        <p>
+          It was created to ensure that different documents on JavaScript are talking about the same language.
+        </p>
+      
+        <h3>ECMAScript Versions:</h3>
+      
+        <ul>
+          <li>Beginning in 1997, JavaScript has evolved into many versions.</li>
+          <li>ECMAScript 1 or ES1 was first released in 1997.</li>
+          <li>ECMAScript 2015 also known as ES6 was released in 2015, and a major revision to JavaScript was made.</li>
+          <li>The latest version of JavaScript will be ECMAScript 2022 (ES13) in 2022.</li>
+        </ul>
+      
+        <h2>What is JavaScript?</h2>
+      
+        <ul>
+          <li>JavaScript is a lightweight, OOP language.</li>
+          <li>It is a scripting language for web pages.</li>
+          <li>It is used to add interactivity and dynamic effects to web pages.</li>
+          <li>".js" is the extension.</li>
+          <li>Nowadays used in server-side development.</li>
+        </ul>
+      
+        <h3>JS Frontend Frameworks:</h3>
+        <ul>
+          <li>React, Angular, Vue.</li>
+        </ul>
+      
+        <h3>JS Backend Frameworks:</h3>
+        <ul>
+          <li>Express, Node.</li>
+        </ul>
+      
+        <p>
+          In this tutorial, we will learn JavaScript in depth.
+        </p>
+
+    </div>
+    <div id="chapter2" style="display: none;">
+        <h1>JS Execution</h1>
+
+        <p>
+          Do we need to install Javascript? <br>
+          <strong>The answer is NO.</strong>
+        </p>
+      
+        <p>
+          JavaScript is present everywhere in browsers, on your phone, etc.
+        </p>
+      
+        <h2>How to execute JavaScript?</h2>
+      
+        <p>
+          JavaScript can be executed right inside one’s browser. You can open the JS console and start writing JS there.
+        </p>
+      
+        <p>
+          Another way to execute JS is a runtime like Node.js which can be installed and used to run JavaScript code.
+        </p>
+      
+        <p>
+          Yet another way to execute JavaScript is by inserting it inside the <code>&lt;script&gt;</code> tag of an HTML document.
+        </p>
+      
+        <h2>What is JavaScript?</h2>
+      
+        <p>
+          JavaScript is a programming language that is commonly used in web development. It is a client-side language, which means that it is executed by the user's web browser rather than the web server. This allows JavaScript to interact with the user and create dynamic, interactive web pages.
+        </p>
+      
+        <p>
+          JavaScript is often used in combination with HTML and CSS to create web pages that are more interactive and engaging. It can be used to create all sorts of effects, such as drop-down menus, image sliders, and pop-up windows.
+        </p>
+      
+        <h2>Getting Started with JavaScript</h2>
+      
+        <p>
+          To start using JavaScript, you'll need a text editor and a web browser. There are many text editors available, such as Sublime Text, Atom, and Visual Studio Code, which are all popular choices among developers.
+        </p>
+      
+        <p>
+          Once you have a text editor set up, you can start writing JavaScript code. To do this, you'll need to create a new file with a <code>.js</code> extension and then type your code into the file. You can then save the file and open it in your web browser to see the results.
+        </p>
+        
+    </div>
+    <div id="chapter3" style="display: none;">
+        <h1>Node.js Installation</h1>
+
+        <p>
+          Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a web browser. It is commonly used for building server-side applications, command-line tools, and other types of scalable network programs.
+        </p>
+      
+        <h2>To install Node.js, you can follow these steps:</h2>
+      
+        <ol>
+          <li>Download the installer: Go to the official Node.js website (<a href="https://nodejs.org/">https://nodejs.org/</a>) and click the "Download" button to download the latest version of the Node.js installer.</li>
+          <li>Run the installer: Double-click the downloaded installer file to start the installation process. Follow the prompts to complete the installation.</li>
+          <li>Verify the installation: To verify that Node.js has been installed successfully, open a terminal or command prompt and type the following command:
+            <pre><code>node -v</code></pre>
+            This should output the version number of Node.js that you have installed.
+          </li>
+        </ol>
+      
+        <p>
+          That's it! You should now have Node.js installed on your system and be able to run JavaScript code using the "node" command.
+        </p>
+      
+        <p>
+          I hope this helps. Let me know if you have any questions.
+        </p>
+      
+        <h2>Script using Node.js</h2>
+      
+        <p>
+          To run JavaScript with Visual Studio Code (VS Code), you will need to follow these steps:
+        </p>
+      
+        <ol>
+          <li>Install VS Code: If you don't already have it, you can download and install VS Code from the official website (<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>).</li>
+          <li>Create a new JavaScript file: Open VS Code and create a new file with a .js extension. You can do this by going to File > New File or by using the shortcut Ctrl + N.</li>
+          <li>Write your JavaScript code: Type your JavaScript code into the file and save it.</li>
+          <li>Open the Command Palette: You can open the Command Palette by pressing Ctrl + Shift + P or by going to View > Command Palette.</li>
+          <li>Run the JavaScript file: In the Command Palette, type "Run JavaScript" and select "Run JavaScript file in the terminal" from the list of options. This will open a terminal window and run your JavaScript file.</li>
+          <li>View the output: The output of your JavaScript code will be displayed in the terminal window.</li>
+        </ol>
+      
+        <p>
+          Alternatively, you can also run JavaScript code directly in the terminal by using a command-line interpreter such as Node.js. To do this, you will need to install Node.js and then run your JavaScript file using the "node" command, followed by the name of the file. For example:
+          <pre><code>node myfile.js</code></pre>
+        </p>
+   
+    </div>
+    <div id="chapter4" style="display: none;">
+        <h1>What are Variables?</h1>
+
+        <p>
+          In JavaScript, variables are used to store data. They are an essential part of any programming language, as they allow you to store, retrieve, and manipulate data in your programs.
+        </p>
+      
+        <p>
+          There are a few different ways to declare variables in JavaScript, each with its own syntax and rules. In this blog post, we'll take a look at the different types of variables available in JavaScript and how to use them.
+        </p>
+      
+        <h2>Declaring Variables</h2>
+      
+        <p>
+          To declare a variable in JavaScript, you use the "var" keyword followed by the name of the variable. For example:
+        </p>
+      
+        <pre><code>var x;</code></pre>
+      
+        <p>
+          This declares a variable called "x" but does not assign any value to it. You can also assign a value to a variable when you declare it, like this:
+        </p>
+      
+        <pre><code>var x = 10;</code></pre>
+      
+        <p>
+          In JavaScript, you can also use the "let" and "const" keywords to declare variables. The "let" keyword is used to declare a variable that can be reassigned later, while the "const" keyword is used to declare a variable that cannot be reassigned. For example:
+        </p>
+      
+        <pre><code>let y = 20;</code></pre>
+        <pre><code>const z = 30;</code></pre>
+      
+        <p>
+          In this example, "y" is a variable that can be reassigned, while "z" is a constant that cannot be reassigned.
+        </p>
+      
+        <h2>Data Types</h2>
+      
+        <p>
+          In JavaScript, there are several data types that you can use to store different types of data. Some common data types include:
+        </p>
+      
+        <ul>
+          <li>Numbers (e.g. 10, 3.14)</li>
+          <li>Strings (e.g. "hello", 'world')</li>
+          <li>Booleans (e.g. true, false)</li>
+          <li>Arrays (e.g. [1, 2, 3])</li>
+          <li>Objects (e.g. { name: "John", age: 30 })</li>
+        </ul>
+       
+    </div>
+    <div id="chapter5" style="display: none;">
+        <h1>Primitives and Objects</h1>
+
+        <p>
+          In JavaScript, there are two main types of data: primitives and objects.
+        </p>
+      
+        <h2>Primitives</h2>
+      
+        <p>
+          Primitives are the simplest and most basic data types in JavaScript. They include:
+        </p>
+      
+        <ul>
+          <li>Numbers (e.g. 10, 3.14)</li>
+          <li>Strings (e.g. "hello", 'world')</li>
+          <li>Booleans (e.g. true, false)</li>
+          <li>Null (a special value that represents an absence of value)</li>
+          <li>Undefined (a special value that represents an uninitialized variable)</li>
+        </ul>
+      
+        <p>
+          Primitives are immutable, which means that once they are created, they cannot be changed. For example:
+        </p>
+      
+        <pre><code>
+            let x = 10;
+            x = 20; // x is now 20</code></pre>
+      
+        <p>
+          In this example, the value of "x" is changed from 10 to 20. However, this does not change the value of the primitive itself, but rather creates a new primitive with the value of 20.
+        </p>
+      
+        <h2>Objects</h2>
+      
+        <p>
+          Objects are more complex data types in JavaScript and are used to represent real-world objects or abstract concepts. They are composed of key-value pairs, where the keys are strings and the values can be any data type (including primitives and other objects).
+        </p>
+      
+        <p>
+          Objects are mutable, which means that they can be changed after they are created. For example:
+        </p>
+      
+        <pre><code>
+            let obj = { name: "John", age: 30 };
+            obj.age = 31; // the age property of obj is now 31</code></pre>
+      
+        <p>
+          In this example, the "age" property of the "obj" object is changed from 30 to 31. This changes the value of the object itself, rather than creating a new object.
+        </p>
+      
+        <p>
+          There are several other data types in JavaScript that are classified as objects, including arrays, functions, and dates. These data types behave similarly to objects in that they are mutable and can be modified after they are created.
+        </p>
+      
+        <h2>Conclusion</h2>
+      
+        <p>
+          In summary, primitives are the simplest data types in JavaScript and are immutable. Objects are more complex data types that are used to represent real-world objects or abstract concepts and are mutable. It is important to understand the differences between these two types of data in order to write effective and maintainable code in JavaScript.
+        </p>
+        
+    </div>
+    <div id="chapter6" style="display: none;">
+        <h1>var vs let vs const</h1>
+
+        <p>
+          In JavaScript, there are three ways to declare variables: <code>var</code>, <code>let</code>, and <code>const</code>. Each of these keywords has its own rules and uses, and it is important to understand the differences between them in order to write effective and maintainable code.
+        </p>
+      
+        <h2>var</h2>
+      
+        <p>
+          The <code>var</code> keyword is used to declare variables in JavaScript. It was introduced in the early days of the language and was the only way to declare variables for a long time. However, the <code>var</code> keyword has some limitations and has been largely replaced by the <code>let</code> and <code>const</code> keywords in modern JavaScript.
+        </p>
+      
+        <p>
+          One of the main issues with <code>var</code> is that it is function-scoped, rather than block-scoped. This means that variables declared with <code>var</code> are accessible within the entire function in which they are declared, rather than just within the block of code in which they appear. This can lead to unexpected behavior and can make it difficult to reason about the scope of variables in your code.
+        </p>
+      
+        <h2>let</h2>
+      
+        <p>
+          The <code>let</code> keyword was introduced in ECMAScript 6 (also known as ES6) and is used to declare variables that can be reassigned later. <code>let</code> variables are block-scoped, which means that they are only accessible within the block of code in which they are declared. This makes them more predictable and easier to reason about than <code>var</code> variables.
+        </p>
+      
+        <pre><code>
+          if (x > 10) {
+            let y = 20;
+            console.log(y); // 20
+          }
+          console.log(y); // ReferenceError: y is not defined
+        </code></pre>
+      
+        <p>
+          In this example, the <code>y</code> variable is declared with the <code>let</code> keyword and is only accessible within the block of the if statement. If you try to access it outside of the block, you will get a "ReferenceError" because <code>y</code> is not defined in that scope.
+        </p>
+      
+        <h2>const</h2>
+      
+        <p>
+          The <code>const</code> keyword was also introduced in ES6 and is used to declare variables that cannot be reassigned later. <code>const</code> variables are also block-scoped and behave similarly to <code>let</code> variables in that respect. However, the main difference is that <code>const</code> variables must be initialized with a value when they are declared and cannot be reassigned later.
+        </p>
+      
+        <pre><code>
+          const PI = 3.14;
+          PI = 3.14159; // TypeError: Assignment to constant variable.
+        </code></pre>
+      
+        <p>
+          In this example, the <code>PI</code> variable is declared with the <code>const</code> keyword and is assigned the value of 3.14. If you try to reassign a new value to <code>PI</code>, you will get a "TypeError" because <code>PI</code> is a constant variable and cannot be changed.
+        </p>
+      
+        <h2>Conclusion</h2>
+      
+        <p>
+          In summary, <code>var</code> is an old way of declaring variables that is function-scoped and can be reassigned. <code>let</code> is a newer way of declaring variables that is block-scoped and can be reassigned. <code>const</code> is a newer way of declaring variables that is block-scoped and cannot be reassigned. In modern JavaScript, it is generally recommended to use <code>let</code> and <code>const</code> instead of <code>var</code>, as they provide better scoping and make it easier to write maintainable code.
+        </p>
+     
+    </div>
+    <div id="chapter7" style="display: none;">
+        <h1>If Else Conditionals</h1>
+
+        <p>
+          The "if" statement in JavaScript is used to execute a block of code if a certain condition is met. The "else" clause is used to execute a block of code if the condition is not met.
+        </p>
+      
+        <p>
+          Here is the basic syntax for an "if" statement:
+        </p>
+      
+        <pre><code>
+          if (condition) {
+            // code to be executed if condition is true
+          }
+        </code></pre>
+      
+        <p>
+          Here is the syntax for an "if" statement with an "else" clause:
+        </p>
+      
+        <pre><code>
+          if (condition) {
+            // code to be executed if condition is true
+          } else {
+            // code to be executed if condition is false
+          }
+        </code></pre>
+      
+        <p>
+          The condition is a boolean expression that evaluates to either true or false. If the condition is true, the code in the "if" block is executed. If the condition is false, the code in the "else" block is executed (if present).
+        </p>
+      
+        <p>
+          For example:
+        </p>
+      
+        <pre><code>
+          let x = 10;
+          if (x > 5) {
+            console.log("x is greater than 5");
+          } else {
+            console.log("x is not greater than 5");
+          }
+        </code></pre>
+      
+        <p>
+          In this example, the condition "x > 5" is true, so the code in the "if" block is executed, and the message "x is greater than 5" is printed to the console.
+        </p>
+      
+    </div>
+    <div id="chapter8" style="display: none;">
+        <h1>If-Else Ladder</h1>
+
+        <p>
+          The "if-else ladder" is a control structure in JavaScript that allows you to execute a different block of code depending on multiple conditions. It is called a ladder because it consists of multiple "if" and "else" statements arranged in a ladder-like fashion.
+        </p>
+      
+        <p>
+          Here is the syntax for an "if-else ladder":
+        </p>
+      
+        <pre><code>
+          if (condition1) {
+            // code to be executed if condition1 is true
+          } else if (condition2) {
+            // code to be executed if condition1 is false and condition2 is true
+          } else if (condition3) {
+            // code to be executed if condition1 and condition2 are false and condition3 is true
+          } ...
+          else {
+            // code to be executed if all conditions are false
+          }
+        </code></pre>
+      
+        <p>
+          In this structure, each "if" statement is followed by an optional "else" statement. If the first "if" condition is true, the code in the corresponding block is executed and the rest of the ladder is skipped. If the first "if" condition is false, the second "if" condition is evaluated, and so on. If none of the conditions are true, the code in the "else" block is executed.
+        </p>
+      
+        <p>
+          For example:
+        </p>
+      
+        <pre><code>
+          let x = 10;
+          if (x > 15) {
+            console.log("x is greater than 15");
+          } else if (x > 10) {
+            console.log("x is greater than 10 but less than or equal to 15");
+          } else if (x > 5) {
+            console.log("x is greater than 5 but less than or equal to 10");
+          } else {
+            console.log("x is less than or equal to 5");
+          }
+        </code></pre>
+      
+        <p>
+          In this example, the first "if" condition "x > 15" is false, so the second "if" condition "x > 10" is evaluated. This condition is also false, so the third "if" condition "x > 5" is evaluated. This condition is true, so the code in the corresponding block is executed, and the message "x is greater than 5 but less than or equal to 10" is printed to the console.
+        </p>
+   
+    </div>
+    <div id="chapter9" style="display: none;">
+        <h1>Switch Case</h1>
+
+        <p>
+          The "switch" statement in JavaScript is another control structure that allows you to execute a different block of code depending on a specific value. It is often used as an alternative to the "if-else ladder" when you have multiple conditions to check against a single value.
+        </p>
+      
+        <p>
+          Here is the syntax for a "switch" statement:
+        </p>
+      
+        <pre><code>
+          switch (expression) {
+            case value1:
+              // code to be executed if expression == value1
+              break;
+            case value2:
+              // code to be executed if expression == value2
+              break;
+            ...
+            default:
+              // code to be executed if expression does not match any of the values
+          }
+        </code></pre>
+      
+        <p>
+          In this structure, the "expression" is evaluated and compared to each of the "case" values. If the "expression" matches a "case" value, the corresponding block of code is executed. The "break" statement is used to exit the "switch" statement and prevent the code in the following cases from being executed. The "default" case is optional and is executed if the "expression" does not match any of the "case" values.
+        </p>
+      
+        <p>
+          For example:
+        </p>
+      
+        <pre><code>
+          let x = "apple";
+          switch (x) {
+            case "apple":
+              console.log("x is an apple");
+              break;
+            case "banana":
+              console.log("x is a banana");
+              break;
+            case "orange":
+              console.log("x is an orange");
+              break;
+            default:
+              console.log("x is something else");
+          }
+        </code></pre>
+      
+        <p>
+          In this example, the "expression" is the variable "x," which has the value "apple." The "expression" is compared to each of the "case" values, and when it matches the value "apple," the corresponding block of code is executed, and the message "x is an apple" is printed to the console.
+        </p>
+       
+    </div>
+    <div id="chapter10" style="display: none;">
+        <h1>Ternary Operator</h1>
+
+        <p>
+          The ternary operator is a shorthand way to write an if-else statement in JavaScript. It takes the form of <code>condition ? value1 : value2</code>, where <code>condition</code> is a boolean expression, and <code>value1</code> and <code>value2</code> are expressions of any type. If <code>condition</code> is true, the ternary operator returns <code>value1</code>; if <code>condition</code> is false, it returns <code>value2</code>.
+        </p>
+      
+        <p>
+          Here's an example of how you can use the ternary operator to assign a value to a variable based on a condition:
+        </p>
+      
+        <pre><code>
+          let x = 10;
+          let y = 20;
+          let max;
+      
+          max = (x > y) ? x : y;
+      
+          console.log(max); // Outputs: 20
+        </code></pre>
+      
+        <p>
+          In this example, the ternary operator checks whether <code>x</code> is greater than <code>y</code>. If it is, <code>max</code> is assigned the value of <code>x</code>; otherwise, it is assigned the value of <code>y</code>.
+        </p>
+      
+        <p>
+          The ternary operator can be a useful and concise way to write simple if-else statements, but it can become difficult to read and understand when used for more complex statements or nested inside other expressions. In these cases, it may be better to use a regular if-else statement instead.
+        </p>
+        
+    </div>
+    <div id="chapter11" style="display: none;">
+      <h1>For Loops</h1>
+
+      <p>For loops are a common control flow structure in programming that allows you to repeat a block of code a specific number of times. In JavaScript, there are three types of for loops: the standard for loop, the for-in loop, and the for-of loop.</p>
+    
+      <h2>Standard for loop</h2>
+    
+      <p>The standard for loop has the following syntax:</p>
+    
+      <pre>
+        <code>
+    for (initialization; condition; increment/decrement) {
+      // code to be executed
+    }
+        </code>
+      </pre>
+    
+      <p>The initialization statement is executed before the loop starts and is typically used to initialize a counter variable. The condition is checked at the beginning of each iteration and if it is true, the loop continues. If it is false, the loop exits. The increment/decrement statement is executed at the end of each iteration and is used to update the counter variable.</p>
+    
+      <p>Here's an example of a standard for loop that counts from 1 to 10:</p>
+    
+      <pre>
+        <code>
+    for (let i = 1; i <= 10; i++) {
+      console.log(i);
+    }
+        </code>
+      </pre>
+    
+      <p>This loop will print the numbers 1 through 10 to the console.</p>
+    
+      <h2>For-in loop</h2>
+    
+      <p>The for-in loop is used to iterate over the properties of an object. It has the following syntax:</p>
+    
+      <pre>
+        <code>
+    for (variable in object) {
+      // code to be executed
+    }
+        </code>
+      </pre>
+    
+      <p>The variable is assigned the name of each property in the object as the loop iterates over them.</p>
+    
+      <p>Here's an example of a for-in loop that iterates over the properties of an object:</p>
+    
+      <pre>
+        <code>
+    let person = {
+      name: "John",
+      age: 30,
+      job: "developer"
+    };
+    
+    for (let key in person) {
+      console.log(key + ": " + person[key]);
+    }
+        </code>
+      </pre>
+    
+      <p>This loop will print the following to the console:</p>
+    
+      <pre>
+        <code>
+    name: John
+    age: 30
+    job: developer
+        </code>
+      </pre>
+    
+      <h2>For-of loop</h2>
+    
+      <p>The for-of loop is used to iterate over the values of an iterable object, such as an array or a string. It has the following syntax:</p>
+    
+      <pre>
+        <code>
+    for (variable of object) {
+      // code to be executed
+    }
+        </code>
+      </pre>
+    
+      <p>The variable is assigned the value of each element in the object as the loop iterates over them.</p>
+    
+      <p>Here's an example of a for-of loop that iterates over the elements of an array:</p>
+    
+      <pre>
+        <code>
+    let numbers = [1, 2, 3, 4, 5];
+    
+    for (let number of numbers) {
+      console.log(number);
+    }
+        </code>
+      </pre>
+    
+      <p>This loop will print the numbers 1 through 5 to the console.</p>
+    
+      <p>For loops are a powerful tool in JavaScript and can be used to perform a variety of tasks, such as iterating over arrays and objects, repeating a block of code a specific number of times, and more. With the three types of for loops available in JavaScript, you can choose the one that best fits your needs and use it to write more efficient and effective code.</p>
+        
+    </div>
+    <div id="chapter12" style="display: none;">
+        <h1>While Loop</h1>
+
+        <p>
+          While loops are a control flow structure in programming that allows you to repeat a block of code while a certain condition is true. In JavaScript, the syntax for a while loop is:
+        </p>
+      
+        <pre><code>
+          while (condition) {
+            // code to be executed
+          }
+        </code></pre>
+      
+        <p>
+          The condition is checked at the beginning of each iteration and if it is true, the code block is executed. If it is false, the loop exits.
+        </p>
+      
+        <p>
+          Here's an example of a while loop that counts from 1 to 10:
+        </p>
+      
+        <pre><code>
+          let i = 1;
+      
+          while (i <= 10) {
+            console.log(i);
+            i++;
+          }
+        </code></pre>
+      
+        <p>
+          This loop will print the numbers 1 through 10 to the console.
+        </p>
+      
+        <p>
+          It's important to include a way to update the condition within the loop; otherwise, it will become an infinite loop and will run forever. In the example above, the <code>i++</code> statement increments the value of <code>i</code> by 1 at the end of each iteration, which eventually causes the condition to be false and the loop to exit.
+        </p>
+      
+        <p>
+          While loops can be useful when you don't know exactly how many times you need to execute a block of code. For example, you might use a while loop to keep prompting a user for input until they provide a valid response.
+        </p>
+      
+        <pre><code>
+          let input = "";
+      
+          while (input !== "yes" && input !== "no") {
+            input = prompt("Please enter 'yes' or 'no':");
+          }
+        </code></pre>
+      
+        <p>
+          This loop will keep prompting the user for input until they enter either "yes" or "no".
+        </p>
+      
+        <p>
+          While loops can be a useful tool in JavaScript, but it's important to use them with caution. If the condition is never met, the loop will become an infinite loop and will run forever. Make sure to include a way to update the condition and eventually exit the loop to avoid this issue.
+        </p>
+      
+    </div>
+    <div id="chapter13" style="display: none;">
+        <h1>Functions</h1>
+
+        <p>
+          JavaScript functions are blocks of code that can be defined and executed whenever needed. They are a crucial part of JavaScript programming and are used to perform specific tasks or actions.
+        </p>
+      
+        <p>
+          Functions are often referred to as "first-class citizens" in JavaScript because they can be treated like any other value, such as a number or a string. This means that they can be assigned to variables, passed as arguments to other functions, and returned as values from functions.
+        </p>
+      
+        <p>
+          Here's the basic syntax for defining a function in JavaScript:
+        </p>
+      
+        <pre><code>
+          function functionName(parameters) {
+            // code to be executed
+          }
+        </code></pre>
+      
+        <p>
+          The <code>functionName</code> is a unique identifier for the function, and the <code>parameters</code> are the variables that are passed to the function when it is called. These parameters act as placeholders for the actual values that are passed to the function when it is executed.
+        </p>
+      
+        <p>
+          Here's an example of a simple function that takes a single parameter and returns the square of that number:
+        </p>
+      
+        <pre><code>
+          function square(x) {
+            return x * x;
+          }
+        </code></pre>
+      
+        <p>
+          To call this function, you would simply use the function name followed by the arguments in parentheses:
+        </p>
+      
+        <pre><code>
+          let result = square(5);  // returns 25
+        </code></pre>
+      
+        <p>
+          Functions can also have multiple parameters, like this:
+        </p>
+      
+        <pre><code>
+          function add(x, y) {
+            return x + y;
+          }
+        </code></pre>
+      
+        <p>
+          In this case, the <code>add</code> function takes two parameters, <code>x</code> and <code>y</code>, and returns their sum.
+        </p>
+      
+        <p>
+          JavaScript also has a special type of function called an "arrow function," which uses a shorter syntax. Here's the same <code>square</code> function defined using an arrow function:
+        </p>
+      
+        <pre><code>
+          const square = (x) => {
+            return x * x;
+          };
+        </code></pre>
+      
+        <p>
+          Arrow functions are often used when you want to create a small, one-line function that doesn't require a separate function keyword.
+        </p>
+      
+        <p>
+          Functions can be defined inside other functions, which is known as "nesting." This is useful for creating smaller, reusable blocks of code that can be called from within the larger function.
+        </p>
+      
+        <pre><code>
+          function outerFunction(x) {
+            function innerFunction() {
+              // code to be executed
+            }
+            // more code
+          }
+        </code></pre>
+      
+        <p>
+          In this example, the <code>innerFunction</code> is defined inside the <code>outerFunction</code> and can only be called from within that function.
+        </p>
+      
+        <p>
+          In addition to these basic concepts, there are many other things you can do with functions in JavaScript, such as passing functions as arguments, creating anonymous functions, and using higher-order functions. These advanced techniques can make your code more efficient and flexible, and are essential tools for any JavaScript developer.
+        </p>
+
+    </div>
+    <div id="chapter14" style="display: none;">
+        <h1>Strings</h1>
+
+        <p>
+          One of the most important aspects of JavaScript is its ability to manipulate strings, which are sequences of characters. In this blog post, we will explore the basics of JavaScript strings and the various string methods that can be used to manipulate them.
+        </p>
+      
+        <p>
+          A string in JavaScript is a sequence of characters enclosed in either single or double quotes. For example, the following are valid strings in JavaScript:
+        </p>
+      
+        <pre><code>
+          "Hello World"
+          'Hello World'
+        </code></pre>
+      
+        <p>
+          JavaScript provides a number of built-in methods for manipulating strings. Some of the most commonly used string methods are:
+        </p>
+      
+        <ul>
+          <li><strong>length</strong> - This method returns the number of characters in a string. For example, the following code will return 11:
+            <pre><code>
+              var str = "Hello World";
+              console.log(str.length);
+            </code></pre>
+          </li>
+      
+          <li><strong>concat</strong> - This method is used to concatenate (combine) two or more strings. For example, the following code will return "Hello World":
+            <pre><code>
+              var str1 = "Hello";
+              var str2 = " World";
+              console.log(str1.concat(str2));
+            </code></pre>
+          </li>
+      
+          <li><strong>indexOf</strong> - This method is used to find the index of a specific character or substring in a string. For example, the following code will return 6:
+            <pre><code>
+              var str = "Hello World";
+              console.log(str.indexOf("W"));
+            </code></pre>
+          </li>
+      
+          <li><strong>slice</strong> - This method is used to extract a portion of a string. For example, the following code will return "World":
+            <pre><code>
+              var str = "Hello World";
+              console.log(str.slice(6));
+            </code></pre>
+          </li>
+      
+          <li><strong>replace</strong> - This method is used to replace a specific character or substring in a string. For example, the following code will return "Hello Universe":
+            <pre><code>
+              var str = "Hello World";
+              console.log(str.replace("World", "Universe"));
+            </code></pre>
+          </li>
+      
+          <li><strong>toUpperCase and toLowerCase</strong> - These methods are used to convert a string to uppercase or lowercase letters. For example, the following code will return "HELLO WORLD" and "hello world" respectively:
+            <pre><code>
+              var str = "Hello World";
+              console.log(str.toUpperCase());
+              console.log(str.toLowerCase());
+            </code></pre>
+          </li>
+        </ul>
+      
+        <p>
+          These are just a few of the many string methods available in JavaScript. By understanding the basics of strings and the various methods that can be used to manipulate them, you can create more dynamic and interactive web pages. So, start experimenting with different string methods and see what you can create!
+        </p>
+      
+        <h1>Arrays and Array Methods</h1>
+      
+        <p>
+          One of the most important data structures in JavaScript is the array, which is a collection of elements. In this blog post, we will explore the basics of JavaScript arrays and the various array methods that can be used to manipulate them.
+        </p>
+      
+        <p>
+          An array in JavaScript is a collection of elements enclosed in square brackets. Elements can be of any data type, including numbers, strings, and other arrays. For example, the following is a valid array in JavaScript:
+        </p>
+      
+        <pre><code>
+          var myArray = [1, "Hello", [2, 3]];
+        </code></pre>
+      
+        <p>
+          JavaScript provides a number of built-in methods for manipulating arrays. Some of the most commonly used array methods are:
+        </p>
+      
+        <ul>
+          <li><strong>length</strong> - This method returns the number of elements in an array. For example, the following code will return 3:
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3]];
+              console.log(myArray.length);
+            </code></pre>
+          </li>
+      
+          <li><strong>push</strong> - This method is used to add an element to the end of an array. For example, the following code will add the element "World" to the end of the array:
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3]];
+              myArray.push("World");
+              console.log(myArray); // [1, "Hello", [2, 3], "World"]
+            </code></pre>
+          </li>
+      
+          <li><strong>pop</strong> - This method is used to remove the last element of an array. For example, the following code will remove the last element ("World") from the array:
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3], "World"];
+              myArray.pop();
+              console.log(myArray); // [1, "Hello", [2, 3]]
+            </code></pre>
+          </li>
+      
+          <li><strong>shift</strong> - This method is used to remove the first element of an array. For example, the following code will remove the first element (1) from the array:
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3]];
+              myArray.shift();
+              console.log(myArray); // ["Hello", [2, 3]]
+            </code></pre>
+          </li>
+      
+          <li><strong>unshift</strong> - This method is used to add an element to the beginning of an array. For example, the following code will add the element 0 to the beginning of the array:
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3]];
+              myArray.unshift(0);
+              console.log(myArray); // [0, 1, "Hello", [2, 3]]
+            </code></pre>
+          </li>
+      
+          <li><strong>slice</strong> - This method is used to extract a portion of an array. For example, the following code will extract the elements from index 1 to 2 (exclusive):
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3]];
+              console.log(myArray.slice(1, 2)); // ["Hello"]
+            </code></pre>
+          </li>
+      
+          <li><strong>splice</strong> - This method is used to add or remove elements from an array. For example, the following code will remove the element at index 1 and add the elements "Hello World" and [4, 5] at index 1:
+            <pre><code>
+              var myArray = [1, "Hello", [2, 3]];
+              myArray.splice(1, 1, "Hello World", [4, 5]);
+              console.log(myArray);
+            </code></pre>
+          </li>
+        </ul>
+
+    </div>
+    <div id="chapter15" style="display: none;">
+        <h1>Map, Filter, and Reduce</h1>
+
+        <p>
+          One of the most important data structures in JavaScript is the array, which is a collection of elements. When working with arrays, it is often necessary to manipulate the elements in various ways, which is where the built-in methods map, filter, and reduce come in. In this blog post, we will explore how to use these methods to manipulate arrays in JavaScript.
+        </p>
+      
+        <h2>Map</h2>
+      
+        <p>
+          The map method is used to create a new array with the result of a callback function called on each element in the original array. The callback function takes one argument, the current element, and returns the new value for that element. For example, the following code will return an array of each element multiplied by 2:
+        </p>
+      
+        <pre><code>
+          var myArray = [1, 2, 3, 4, 5];
+          var multipliedArray = myArray.map(function(element) {
+              return element * 2;
+          });
+          console.log(multipliedArray); // [2, 4, 6, 8, 10]
+        </code></pre>
+      
+        <h2>Filter</h2>
+      
+        <p>
+          The filter method is used to filter an array based on a certain condition. The filter method takes a callback function as its argument, which is called on each element in the array. If the function returns true, the element is included in the new filtered array. For example, the following code will return an array of all even numbers in the original array:
+        </p>
+      
+        <pre><code>
+          var myArray = [1, 2, 3, 4, 5];
+          var evenNumbers = myArray.filter(function(element) {
+              return element % 2 === 0;
+          });
+          console.log(evenNumbers); // [2, 4]
+        </code></pre>
+      
+        <h2>Reduce</h2>
+      
+        <p>
+          The reduce method is used to reduce an array to a single value. The reduce method takes a callback function as its argument, which is called on each element in the array. The callback function takes two arguments, the accumulator and the current element, and returns the new value for the accumulator. For example, the following code will return the sum of all elements in the array:
+        </p>
+      
+        <pre><code>
+          var myArray = [1, 2, 3, 4, 5];
+          var sum = myArray.reduce(function(acc, cur) {
+              return acc + cur;
+          }, 0);
+          console.log(sum); // 15
+        </code></pre>
+      
+        <p>
+          It's important to note that these methods work on the original array and don't change it; they return a new array.
+        </p>
+      
+        <p>
+          Combining these three methods can be powerful, for example, you can filter an array, then map the filtered array, and finally reduce the mapped array.
+        </p>
+      
+        <p>
+          In conclusion, understanding and utilizing the map, filter, and reduce methods in JavaScript can greatly improve your ability to manipulate arrays and perform complex operations on them. These methods are not only more concise but also more efficient than traditional loops and make your code more readable.
+        </p>
+        
+    </div>
+    <div id="chapter16" style="display: none;">
+        <h1>Classes in JavaScript</h1>
+
+        <p>
+          Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications and computer programs. One of the fundamental concepts of OOP is the class. In JavaScript, classes are used to define the blueprint for objects, allowing developers to create objects that share the same properties and methods.
+        </p>
+      
+        <p>
+          A class in JavaScript is defined using the class keyword, followed by the class name. The class body is defined within curly braces {} and contains the properties and methods of the class.
+        </p>
+      
+        <p>
+          For example, consider the following class Person that defines a person's name and age:
+        </p>
+      
+        <pre><code>
+          class Person {
+              constructor(name, age) {
+                  this.name = name;
+                  this.age = age;
+              }
+          }
+        </code></pre>
+      
+        <p>
+          The constructor method is a special method that is called when a new object is created from the class. It is used to initialize the properties of the object. In this example, the constructor takes in two parameters name and age and assigns them to the object's properties.
+        </p>
+      
+        <p>
+          You can create a new object using the new keyword and passing in any required arguments to the constructor. For example:
+        </p>
+      
+        <pre><code>
+          let person1 = new Person("John", 30);
+          let person2 = new Person("Jane", 25);
+        </code></pre>
+      
+        <p>
+          You can also add methods to a class by defining them within the class body. For example, you could add a method called greet() that returns a greeting message:
+        </p>
+      
+        <pre><code>
+          class Person {
+              constructor(name, age) {
+                  this.name = name;
+                  this.age = age;
+              }
+      
+              greet() {
+                  return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+              }
+          }
+        </code></pre>
+      
+        <p>
+          JavaScript classes also support inheritance and polymorphism which are fundamental concepts of OOP, but beyond the scope of this blog.
+        </p>
+      
+        <p>
+          In conclusion, classes in JavaScript are used to define the blueprint for objects and provide a way to create objects that share the same properties and methods. The class keyword is used to define a class, and the constructor method is used to initialize the properties of the object. Classes also provide a way to add methods to the object, making it easy to create reusable code. Understanding how to use classes in JavaScript is essential for creating robust and maintainable code.
+        </p>
+       
+
+    </div>
+    <div id="chapter17" style="display: none;">
+        
+  <h1>Objects in JavaScript</h1>
+
+  <p>
+    Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications and computer programs. In JavaScript, objects are a fundamental concept, and they are used to represent real-world entities, such as a person, a car, or a bank account.
+  </p>
+
+  <p>
+    JavaScript objects are created using the {} notation, also known as object literal notation. For example, the following code creates an object that represents a person:
+  </p>
+
+  <pre><code>
+    let person = {
+        name: "John",
+        age: 30,
+        greet: function() {
+            return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+        }
+    };
+  </code></pre>
+
+  <p>
+    You can access the properties of an object using the dot notation (.) or the bracket notation ([]). For example, you can access the name and age properties of the person object using:
+  </p>
+
+  <pre><code>
+    console.log(person.name); // "John"
+    console.log(person["age"]); // 30
+  </code></pre>
+
+  <p>
+    You can also add, update, and delete properties to an object by using the dot notation or the bracket notation.
+  </p>
+
+  <pre><code>
+    person.address = "New York";
+    person["phone"] = "123-456-7890";
+    delete person.age;
+  </code></pre>
+
+  <p>
+    JavaScript objects also have built-in methods such as hasOwnProperty(), valueOf(), toString(), etc.
+  </p>
+
+  <p>
+    Objects in JavaScript can also be created using a constructor function, which is a special kind of function that is used to create and initialize new objects. For example, the following code defines a constructor function Person that can be used to create new Person objects:
+  </p>
+
+  <pre><code>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        this.greet = function() {
+            return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+        }
+    }
+
+    let person1 = new Person("John", 30);
+    let person2 = new Person("Jane", 25);
+  </code></pre>
+
+  <p>
+    In addition, JavaScript also provides an Object() constructor function that can be used to create an empty object with no properties.
+  </p>
+
+  <p>
+    In conclusion, objects in JavaScript are a fundamental concept that is used to represent real-world entities. They can be created using object literal notation or constructor functions, and they have properties and methods that can be accessed and manipulated. Understanding how to work with objects in JavaScript is essential for creating robust and maintainable code and is also the foundation of OOP in JavaScript.
+  </p>
+       
+    </div>
+
+    <div id="chapter18" style="display: none;">
+        <h1>Constructor in JavaScript</h1>
+
+        <p>
+          The constructor is a special method that is used in object-oriented programming (OOP) to create and initialize new objects. In JavaScript, constructors are used to create objects that share the same properties and methods, and they are defined using the constructor keyword.
+        </p>
+      
+        <p>
+          A constructor function is defined using the function keyword, followed by the function name, which is typically the name of the class. The constructor function takes in any required parameters and assigns them to the object's properties.
+        </p>
+      
+        <p>
+          For example, consider the following constructor function Person that defines a person's name and age:
+        </p>
+      
+        <pre><code>
+          function Person(name, age) {
+              this.name = name;
+              this.age = age;
+          }
+        </code></pre>
+      
+        <p>
+          To create a new object using the constructor function, you use the new keyword followed by the function name and any required parameters:
+        </p>
+      
+        <pre><code>
+          let person1 = new Person("John", 30);
+          let person2 = new Person("Jane", 25);
+        </code></pre>
+      
+        <p>
+          The this keyword inside the constructor function refers to the current object being created. The this keyword is used to assign the properties passed in as arguments to the new object being created.
+        </p>
+      
+        <p>
+          In addition to initializing properties, constructors can also define methods for objects created from the constructor. For example, you can add a method called greet() that returns a greeting message:
+        </p>
+      
+        <pre><code>
+          function Person(name, age) {
+              this.name = name;
+              this.age = age;
+              this.greet = function() {
+                  return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+              };
+          }
+        </code></pre>
+       
+    </div>
+
+    <div id="chapter19" style="display: none;">
+        <h1>Static Method in JavaScript</h1>
+
+        <p>
+          In object-oriented programming, a static method is a method that is associated with a class, rather than an instance of the class. In JavaScript, static methods are defined using the static keyword and they can be accessed without creating an instance of the class.
+        </p>
+      
+        <p>
+          For example, consider the following class MathHelper that defines a static method called add() that takes in two numbers and returns their sum:
+        </p>
+      
+        <pre><code>
+          class MathHelper {
+              static add(a, b) {
+                  return a + b;
+              }
+          }
+        </code></pre>
+      
+        <p>
+          You can access the static method directly from the class, without creating an instance of the class.
+        </p>
+      
+        <pre><code>
+          console.log(MathHelper.add(1, 2)); // 3
+        </code></pre>
+      
+        <p>
+          Static methods are useful when you want to add utility methods to a class that don't depend on the state of an instance. For example, you might use a static method to generate a unique ID for an object, or to perform a calculation that doesn't depend on the state of an instance.
+        </p>
+      
+        <p>
+          It's important to note that static methods do not have access to the this keyword, as they are not associated with an instance of the class. Instead, they can only access the arguments passed in to the method and any variables or functions defined within the class.
+        </p>
+      
+        <p>
+          In conclusion, static methods in JavaScript are methods that are associated with a class, rather than an instance of the class. They are defined using the static keyword and can be accessed directly from the class, without creating an instance of the class. Static methods are useful when you want to add utility methods to a class that don't depend on the state of an instance. However, it's important to keep in mind that static methods do not have access to the this keyword.
+        </p>
+       
+    </div>
+
+    <div id="chapter20" style="display: none;">
+        <h1>Encapsulation in JavaScript</h1>
+
+        <p>
+          Encapsulation is a fundamental concept in object-oriented programming (OOP) that refers to the practice of hiding the internal details of an object from other objects and code. In JavaScript, encapsulation is achieved by using closures and access modifiers, such as the private and public keywords.
+        </p>
+      
+        <p>
+          JavaScript uses closures to implement encapsulation, which allows developers to create private variables and methods that cannot be accessed from outside the object. For example, consider the following code:
+        </p>
+      
+        <pre><code>
+          function Person(name, age) {
+              let privateAge = age;
+              this.name = name;
+      
+              this.getAge = function() {
+                  return privateAge;
+              }
+          }
+      
+          let person = new Person("John", 30);
+          console.log(person.name); // "John"
+          console.log(person.privateAge); // undefined
+          console.log(person.getAge()); // 30
+        </code></pre>
+      
+        <p>
+          In this example, the privateAge variable is defined inside the constructor function and can only be accessed using the getAge method. This means that the internal state of the object is hidden from other objects and code, providing a level of protection and security.
+        </p>
+      
+        <p>
+          Access modifiers such as private, public, and protected are not natively supported in JavaScript, but they can be implemented using closures as well. In addition, other libraries and frameworks such as TypeScript provide a way to use access modifiers.
+        </p>
+      
+        <p>
+          In conclusion, encapsulation is a fundamental concept in OOP that allows developers to hide the internal details of an object from other objects and code. In JavaScript, encapsulation is achieved by using closures and access modifiers, such as the private and public keywords. This allows developers to protect the internal state of an object and create more robust and maintainable code. Encapsulation is not natively supported in JavaScript but can be implemented using closures and other libraries like TypeScript.
+        </p>
+       
+    </div>
+
+    <div id="chapter21" style="display: none;">
+        <h1>Inheritance in JavaScript</h1>
+
+        <p>
+          Inheritance is a fundamental concept in object-oriented programming (OOP) that allows developers to create a new class that inherits properties and methods from an existing class. In JavaScript, inheritance is achieved by using the prototype property and the Object.create() method.
+        </p>
+      
+        <p>
+          JavaScript uses a prototype-based inheritance model, which means that objects can inherit properties and methods from other objects. Each object has a prototype property that refers to another object, and properties and methods are inherited by traversing the prototype chain.
+        </p>
+      
+        <p>
+          For example, consider the following code:
+        </p>
+      
+        <pre><code>
+          function Person(name, age) {
+              this.name = name;
+              this.age = age;
+          }
+      
+          Person.prototype.greet = function() {
+              return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+          }
+      
+          function Student(name, age, major) {
+              Person.call(this, name, age);
+              this.major = major;
+          }
+      
+          Student.prototype = Object.create(Person.prototype);
+          Student.prototype.constructor = Student;
+      
+          let student = new Student("John", 25, "Computer Science");
+          console.log(student.greet()); // "Hello, my name is John and I am 25 years old."
+          console.log(student.major); // "Computer Science"
+        </code></pre>
+      
+        <p>
+          In this example, the Student class inherits properties and methods from the Person class. The Object.create() method is used to create a new object that inherits from the Person.prototype object, and the constructor property is reset to the Student class.
+        </p>
+      
+        <p>
+          In JavaScript, the inheritance model is a bit different from other languages like Java or C#, where classes inherit from other classes and the subclass has access to the methods and properties of the superclass. In JavaScript, it's based on the prototype chain, where each object has a prototype property that refers to another object and inherits properties and methods by traversing the prototype chain.
+        </p>
+      
+        <p>
+          In conclusion, inheritance is a fundamental concept in OOP that allows developers to create a new class that inherits properties and methods from an existing class. In JavaScript, inheritance is achieved by using the prototype property and the Object.create() method. This allows developers to create reusable code and create a more organized and maintainable codebase. Understanding the prototype-based inheritance model in JavaScript is essential to be able to use inheritance effectively in JavaScript.
+        </p>
+       
+    </div>
+
+    <div id="chapter22" style="display: none;">
+        <h1>Polymorphism in JavaScript</h1>
+
+        <p>
+          Polymorphism is a fundamental concept in object-oriented programming (OOP) that refers to the ability of different objects to respond to the same method call in different ways. In JavaScript, polymorphism is achieved by using function overloading and function overriding.
+        </p>
+      
+        <p>
+          Function overloading refers to the ability of a function to have multiple implementations based on the number and/or types of arguments passed to it. JavaScript does not support function overloading natively, however, you can achieve similar functionality by using the arguments object and checking the number and/or types of arguments passed to the function.
+        </p>
+      
+        <p>
+          Function overriding refers to the ability of a subclass to provide a different implementation of a method that is already provided by its superclass. In JavaScript, this can be achieved by reassigning the prototype of the subclass.
+        </p>
+      
+        <p>
+          For example, consider the following code:
+        </p>
+      
+        <pre><code>
+          class Shape {
+              constructor(name) {
+                  this.name = name;
+              }
+              draw() {
+                  console.log(`Drawing a ${this.name}`);
+              }
+          }
+      
+          class Circle extends Shape {
+              draw() {
+                  console.log(`Drawing a Circle`);
+              }
+          }
+      
+          class Square extends Shape {
+              draw() {
+                  console.log(`Drawing a Square`);
+              }
+          }
+      
+          let shape = new Shape("Shape");
+          let circle = new Circle();
+          let square = new Square();
+      
+          shape.draw(); //Drawing a Shape
+          circle.draw(); //Drawing a Circle
+          square.draw(); //Drawing a Square
+        </code></pre>
+      
+        <p>
+          In this example, the draw() method is overridden in the subclasses Circle and Square, providing a different implementation of the method that is already provided by the superclass Shape.
+        </p>
+      
+        <p>
+          In conclusion, polymorphism is a fundamental concept in OOP that refers to the ability of different objects to respond to the same method call in different ways.
+        </p>
+       
+    </div>
+
+    <div id="chapter23" style="display: none;">
+        <h1>Abstraction in JavaScript</h1>
+
+        <p>
+          Abstraction is a fundamental concept in object-oriented programming (OOP) that refers to the practice of hiding the implementation details of an object and exposing only the essential features to the user. In JavaScript, abstraction is achieved by using abstract classes and interfaces.
+        </p>
+      
+        <p>
+          An abstract class is a class that cannot be instantiated and is meant to be used as a base class for other classes. Abstract classes typically contain one or more abstract methods, which are methods that have a signature but no implementation. These methods must be implemented by the derived classes.
+        </p>
+      
+        <p>
+          JavaScript does not support abstract classes natively, but you can achieve similar functionality by using a combination of function constructors and prototypes.
+        </p>
+      
+        <p>
+          For example, consider the following code:
+        </p>
+      
+        <pre><code>
+          function Shape() {
+              if (this.constructor === Shape) {
+                  throw new Error("Cannot instantiate abstract class Shape");
+              }
+              this.draw = function() {
+                  throw new Error("Cannot call abstract method draw from Shape");
+              }
+          }
+      
+          function Circle() {
+              Shape.call(this);
+              this.draw = function() {
+                  console.log("Drawing a Circle");
+              }
+          }
+          Circle.prototype = Object.create(Shape.prototype);
+          Circle.prototype.constructor = Circle;
+      
+          let circle = new Circle();
+          circle.draw(); // "Drawing a Circle"
+          let shape = new Shape(); // Error: Cannot instantiate abstract class Shape
+        </code></pre>
+      
+        <p>
+          In this example, the Shape class is an abstract class that cannot be instantiated and contains an abstract method draw() which throws an error when called. The Circle class inherits from the Shape class and implements the draw() method providing a specific implementation.
+        </p>
+      
+        <p>
+          Interfaces are another way to achieve abstraction in JavaScript, although it's not a native feature of javascript. Some libraries like TypeScript provide interfaces. An interface defines a set of methods that a class must implement but does not provide an implementation for those methods. This allows developers to ensure that a class has the required methods without specifying how those methods should be implemented.
+        </p>
+    </div>
+
+    <script>
+        // Show the content for the first chapter initially
+        showChapter(1);
+    </script>
+
+</body>
+
+</html>

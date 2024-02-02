@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.stick {
+    position: fixed;
+    z-index: 1000;
+    background-color: #3ee8d0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    /* border: 0.5px solid black; */
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.namelogo {
+    height: 46px;
+    width: 244px;
+    /* border: 2px solid black; */
+    margin-left: 17px;
+    text-align: center;
+}
+
+.name {
+    font-weight: 900px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: rgb(126 34 206);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.navigations {
+    height: 42px;
+    width: 38vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    left: 84vh;
+
+
+}
+
+.fa-moon {
+    font-size: 2em;
+}
+
+.underline:hover {
+    color: purple;
+    /* Change text color on hover */
+    text-decoration: underline;
+    background-color: rgb(121, 181, 234);
+    /* Add underline on hover */
+    tab-size: 900;
+}
+
+.navigation2 {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.home-logo {
+    position: relative;
+    left: 20px;
+}
+
+.navs {
+    height: 4vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 524px;
+    font-weight: 900;
+    color: rgb(126 34 206);
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* main started here */
+.main {
+    position: relative;
+    top: 17.5vh;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+
+.half-image {
+    position: absolute;
+    top: 0;
+    right: -5vh;
+    width: 50%;
+    height: 120%;
+    background: url('../imgaes/main.avif');
+    background-size: cover;
+    transform: skewX(-15deg);
+}
+
+.half-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transform: skewX(-15deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-content {
+    height: 33vh;
+    width: 42vw;
+    padding: 20px;
+    transform: skewX(15deg);
+    /* border: 2px solid black; */
+}
+
+.heading {
+    margin-left: -30vh;
+    margin-bottom: 3vh;
+}
+
+.heading2 {
+    margin-left: -76vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 130.5px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.html-text {
+    background-color: #D9EEE1 !important;
+    height: 66vh;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1px;
+}
+
+.css-text {
+    background-color: #FFF4A3 !important;
+    height: 66vh;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+
+}
+
+.javascript-text {
+    background-color: #73e22e !important;
+    height: 66vh;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+
+}
+
+.dsa-text {
+    background-color: #F3ECEA !important;
+    height: 66vh;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.alpha1 {
+    position: relative;
+    height: 26rem;
+    width: 29rem;
+    top: 4vh;
+    left: 19vw;
+    box-sizing: border-box;
+}
+
+.alpha-heading1 {
+    font-size: large;
+    position: relative;
+    width: 18rem;
+    top: 5rem;
+    left: 6rem;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.alpha-para1 {
+    position: relative;
+    top: 6rem;
+    left: 5rem;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.alpha-heading2 {
+    font-size: large;
+    position: relative;
+    width: 18rem;
+    top: 5rem;
+    left: 8rem;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.alpha-para2 {
+    position: relative;
+    top: 6rem;
+    left: 6rem;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.alpha-heading3 {
+    font-size: large;
+    position: relative;
+    width: 18rem;
+    top: 5rem;
+    left: 1rem;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.alpha-para3 {
+    position: relative;
+    top: 6rem;
+    left: 8rem;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.alpha-heading4 {
+    font-size: large;
+    position: relative;
+    width: 18rem;
+    top: 5rem;
+    left: 10rem;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.alpha-para4 {
+    position: relative;
+    top: 6rem;
+    left: 7rem;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.alpha-btn {
+    border-radius: 10px;
+    position: relative;
+    top: 8rem;
+    left: 4rem;
+    padding: 19px;
+    background-color: beige;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.alpha-image1 {
+    position: relative;
+    top: -19rem;
+    left: 56rem;
+    height: 16rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* animattion */
+/* Style for the blinking cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: #000;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.textcontainer {
+    position: relative;
+    left: -11rem;
+}
+
+.text {
+    display: inline;
+    color: rgb(126 34 206);
+}
+
+.message {
+    position: relative;
+    top: 3rem;
+    left: 0rem;
+    text-align: left;
+    white-space: pre-line;
+}
+
+.cartoon {
+    position: relative;
+    height: 27vh;
+    background-image: url("cartoon.png");
+    background-repeat: no-repeat;
+    top: -14rem;
+    left: 29rem;
+}
+
+/* footer start here */
+footer {
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+.last{
+    height: 40vh;
+    background-color: #333;
+}

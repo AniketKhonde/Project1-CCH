@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraftHub/DSA Questions</title>
+    <link rel="stylesheet" href="../CSS-files/dsa-doc.css">
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <script src="../javascript-files/dsa-doc.js" defer></script> 
+</head>
+<body onload="filterQuestions()" id="dsa-doc">
+    <button class="home-btn" onclick="changePage5()">Go to Home Page</button>
+    <h1>Top 50 DSA Questions For Practice</h1>
+    <label for="topics">Select a Topic:</label>
+    <select id="topics" onchange="filterQuestions()">
+        <!-- Add your topic options here -->
+        <option value="all">All Topics</option>
+        <option value="array">Array</option>
+        <option value="2darray">2D Array</option>
+        <option value="strings">Strings</option>
+        <option value="sorting">Sorting</option>
+        <option value="recursion">Recursion</option>
+        <option value="linkedlist">Linked List</option>
+        <option value="stack">Stack</option>
+        <option value="queue">Queue</option>
+        <option value="tree">Tree</option>
+        <option value="graph">Graph</option>
+    </select>
+
+    <table id="questions-table">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Platform Link</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="questions-body">
+            <!-- Questions will be dynamically added here -->
+        </tbody>
+    </table>
+</body>
+</html>

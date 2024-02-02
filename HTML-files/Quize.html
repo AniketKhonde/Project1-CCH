@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraftHub/Quize</title>
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <link rel="stylesheet" href="../CSS-files/quize-style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../javascript-files/Quize.js" defer>
+    </script>
+</head>
+
+<body>
+    <div class="container" id="pageContent">
+        <!-- navbar section starts here -->
+        <div class="stick">
+          <div class="navbar">
+              <div class="namelogo">
+                  <span class="name">
+                      <i class="fa-solid fa-code"></i>
+                      CodeCrapftHub
+                  </span>
+              </div>
+              <div class="navigations">
+                  <p class="home underline" onclick="gohome()">Home</p>
+                  <p class="blog underline" onclick="goblog()">Blog</p>
+                  <p class="notes underline" onclick="gonotes()">Notes</p>
+                  <p class="about-me underline" onclick="goquize()">Solve Quize</p>
+                  <p class="contact underline" onclick="gocontact()">Contact</p>
+              </div>
+          </div>
+          <div class="navigation2">
+              <i class="fa-solid fa-house home-logo" onclick="gohome()"></i>
+              <div class="navs">
+                  <p class="html underline" onclick="changePage1()">HTML</p>
+                  <P class="css underline" onclick="changePage2()">CSS</P>
+                  <p class="javascript underline" onclick="changePage3()">Javascript</p>
+                  <p class="dsa underline" onclick="changePage4()">DSA</p>
+              </div>
+          </div>
+      </div>
+        <!-- main section starts here -->
+        <div class="main">
+            <h1 class="heading">Solve, Test Quize by CodeCraftHub</h1>
+            <div class="Notesdiv">
+                <div class="Notes">
+                    <img src="../imgaes/htmllogo.webp" alt="html logo" class="imglogo">
+                    <h3 class="msg">Solve html Quize here</h3>
+                    <button class="btn" onclick="htmlquize()"><strong>Solve Quize</strong></button>
+                </div>
+
+                <div class="Notes">
+                    <img src="../imgaes/csslogo.webp" alt="css logo" class="imglogo">
+                    <h3 class="msg">Solve CSS Quize here</h3>
+                    <button class="btn" onclick="cssquize()"><strong>Solve Quize</strong></button>
+
+                </div>
+
+                <div class="Notes">
+                    <img src="../imgaes/javascriptlogo.webp" alt="javascritp logo" class="imglogo">
+                    <h3 class="msg">Solve Javscript Quize here</h3>
+                    <button class="btn" onclick="javascriptquize()"><strong>Solve Quize</strong></button>
+
+                </div>
+                <div class="Notes">
+                    <img src="../imgaes/dsalogo.webp" alt="dsa logo" class="imglogo">
+                    <h3 class="msg">Solve DSA Quize here</h3>
+                    <button class="btn" onclick="dsaquize()"><strong>Solve Quize</strong></button>
+                </div>
+
+                <div class="Notes">
+                    <img src="../imgaes/javalogo.webp" alt="java logo" class="imglogo">
+                    <h3 class="msg">Solve Java Quize here</h3>
+                    <button class="btn" onclick="javaquize()"><strong>Solve Quize</strong></button>
+
+                </div>
+
+                <div class="Notes">
+                    <img src="../imgaes/python_logo.webp" alt="python logo" class="imglogo">
+                    <h3 class="msg">Solve Python Quize here</h3>
+                    <button class="btn" onclick="pythonquize()"><strong>Solve Quize</strong></button>
+
+                </div>
+
+            </div>
+        </div>
+            
+    </div>
+</body>
+
+</html>

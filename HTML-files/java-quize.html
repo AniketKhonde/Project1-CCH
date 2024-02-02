@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <script src="../javascript-files/java-quize.css" defer></script>
+    <link rel="stylesheet" href="../CSS-files/java-quize.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1 class="header">Welcome to java Quiz</h1>
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is the keyword used to declare a constant in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) var</label>
+                <label><input type="radio" name="q1" value="b"> b) const</label>
+                <label><input type="radio" name="q1" value="c"> c) final</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>2. Which Java keyword is used to define a class that cannot be instantiated and can only have static members?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) abstract</label>
+                <label><input type="radio" name="q2" value="b"> b) static</label>
+                <label><input type="radio" name="q2" value="c"> c) final</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>3. What is the purpose of the <code>super()</code> keyword in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) Accessing superclass variables</label>
+                <label><input type="radio" name="q3" value="b"> b) Calling superclass methods</label>
+                <label><input type="radio" name="q3" value="c"> c) Calling superclass constructor</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>4. What is the default value of a boolean variable in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) null</label>
+                <label><input type="radio" name="q4" value="b"> b) 0</label>
+                <label><input type="radio" name="q4" value="c"> c) false</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>5. How do you declare an array in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) int[] array</label>
+                <label><input type="radio" name="q5" value="b"> b) array int[]</label>
+                <label><input type="radio" name="q5" value="c"> c) int array[]</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>6. What is the purpose of the <code>finally</code> block in a try-catch-finally statement?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> a) To catch exceptions</label>
+                <label><input type="radio" name="q6" value="b"> b) To define cleanup code</label>
+                <label><input type="radio" name="q6" value="c"> c) To handle the main logic</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>7. In Java, what is the difference between <code>==</code> and <code>equals()</code> when comparing strings?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> a) No difference</label>
+                <label><input type="radio" name="q7" value="b"> b) <code>==</code> compares values, <code>equals()</code> compares references</label>
+                <label><input type="radio" name="q7" value="c"> c) <code>==</code> compares references, <code>equals()</code> compares values</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>8. What is the purpose of the <code>interface</code> keyword in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> a) To define a class</label>
+                <label><input type="radio" name="q8" value="b"> b) To implement multiple inheritance</label>
+                <label><input type="radio" name="q8" value="c"> c) To define a contract for classes</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>9. How is a static method different from an instance method in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> a) Static methods can access instance variables</label>
+                <label><input type="radio" name="q9" value="b"> b) Instance methods can be called without creating an object</label>
+                <label><input type="radio" name="q9" value="c"> c) Static methods belong to the class, while instance methods belong to an object</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>10. What is the purpose of the <code>throw</code> keyword in Java?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> a) To catch exceptions</label>
+                <label><input type="radio" name="q10" value="b"> b) To declare exceptions</label>
+                <label><input type="radio" name="q10" value="c"> c) To explicitly throw an exception</label>
+            </div>
+        </div>
+
+        <button id="submit-btn" class="submit-btn1" onclick="submitQuiz()">Submit</button>
+        <button onclick="gohome()" class="submit-btn1">Back</button>
+    </div>
+</body>
+
+</html>

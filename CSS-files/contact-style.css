@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* body {
+    text-align: center;
+} */
+
+.stick {
+    background-color: #3ee8d0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    /* border: 0.5px solid black; */
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.namelogo {
+    height: 46px;
+    width: 244px;
+    /* border: 2px solid black; */
+    margin-left: 17px;
+    text-align: center;
+}
+
+.name {
+    font-weight: 900px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: rgb(126 34 206);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.navigations {
+    height: 42px;
+    width: 38vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    left: 84vh;
+}
+
+.fa-moon {
+    font-size: 2em;
+}
+
+.underline:hover {
+    color: purple;
+    /* Change text color on hover */
+    text-decoration: underline;
+    background-color: rgb(121, 181, 234);
+    /* Add underline on hover */
+    tab-size: 900;
+}
+
+.navigation2 {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 103%;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-left: -3vh;
+}
+
+.home-logo {
+    position: relative;
+    left: 20px;
+}
+
+.navs {
+    height: 4vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 35vw;
+    font-weight: 900;
+    color: rgb(126 34 206);
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-top: 4vh;
+    margin-left: 37vw;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dabba {
+    height: 30vh;
+    width: 91%;
+    background-color: bisque;
+    border: 2px solid black;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    margin: 8vh;
+    border-radius: 20px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #0077cc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.contact-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.contact-link:hover {
+    background-color: #0077cc;
+    color: #fff;
+}

@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraftHub/html</title>
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <link rel="stylesheet" href="../CSS-files/html-doc.css">
+    <script src="../javascript-files/html-doc.js"></script>
+</head>
+
+<body>
+    <div class="container" id="html-doc">
+        <div class="navbar">
+            <h3 class="heading-navigation">Introduction</h3>
+            <span onclick="showChapter(1)">HTML Introduction</span>
+            <span onclick="showChapter(2)">HTML Tags</span>
+            <span onclick="showChapter(3)">HTML Elements</span>
+            <span onclick="showChapter(4)">HTML Comments</span>
+            <span onclick="showChapter(5)">HTML Attributes</span>
+            <span onclick="showChapter(6)">HTML ID and Classes</span>
+            <span onclick="showChapter(7)">HTML Execution</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">HTML Basics Tags</h3>
+            <span onclick="showChapter(8)">Heading Tags</span>
+            <span onclick="showChapter(9)">Paragraph Tags</span>
+            <span onclick="showChapter(10)">Anchor Tags</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">HTML Lists</h3>
+            <span onclick="showChapter(11)">HTML Lists</span>
+            <span onclick="showChapter(12)">HTML Unordered List</span>
+            <span onclick="showChapter(13)">HTML Ordered List</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">HTML Tables</h3>
+            <span onclick="showChapter(14)">HTML Tables</span>
+            <!-- Add more spans for additional chapters -->
+            <h3 class="heading-navigation">HTML Forms</h3>
+            <span onclick="showChapter(15)">Introduction to HTNL Forms</span>
+            <span onclick="showChapter(16)">HTML Input Types</span>
+            <span onclick="showChapter(17)">HTML Textarea and Select</span>
+
+        </div>
+
+        <main class="contentarea">
+            <div class="buttons top-btn">
+                <button id="prevBtn" class="btn" onclick="prevChapter()">Previous</button>
+                <button id="Homebtn" class="btn" onclick="changePage6()">Home</button>
+                <button id="nextBtn" class="btn" onclick="nextChapter()">Next</button>
+            </div>
+            <div id="content">
+                <h2>Welcome to My Course!</h2>
+                <p>This is the default content. Click on the chapters to change the content.</p>
+            </div>
+            <div class="buttons bottom-btn">
+                <button id="prevBtn1" class="btn" onclick="prevChapter()">Previous</button>
+                <button id="Homebtn1" class="btn" onclick="changePage6()">Home</button>
+                <button id="nextBtn1" class="btn" onclick="nextChapter()">Next</button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Define content for each chapter -->
+    <div id="chapter1" style="display: none;">
+        <h2>Chapter 1 Introduction</h2>
+        <p>
+            Today, I'm writing this tutorial to create a resource that will help you learn HTML in less than 30 days.
+            Here's a recommended timeline for learning HTML, based on your educational background:
+        </p>
+        <ul>
+            <li>High School students and younger: Around 25 days</li>
+            <li>Those beyond High School: Around 20 days</li>
+            <li>College students and above: Around 10-20 days</li>
+        </ul>
+        <p>
+            You may be wondering why I'm discussing these timelines. It's important for me to set expectations before
+            you start your journey of learning HTML with me.
+        </p>
+        <p>
+            My name is Aniket Khonde, and today I'm writing this comprehensive HTML tutorial for all of you. Let's jump
+            right into HTML!
+        </p>
+        <h2>What is HTML?</h2>
+
+        <p>
+            HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web
+            pages.
+            It's a markup language used to structure content on the web, defining elements like headings, paragraphs,
+            links,
+            and images. HTML forms the backbone of web content.
+        </p>
+
+        <p>
+            In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web
+            browser
+            how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks
+            that
+            create the structure and look of a website, similar to how bricks and mortar are used to build a house.
+        </p>
+
+        <h2>In a nutshell:</h2>
+
+        <ul>
+            <li>HTML is the language of the web, used to create websites.</li>
+            <li>HTML defines the barebone structure or layout of web pages that we see on the Internet.</li>
+            <li>HTML consists of a set of tags contained within an HTML document, and the associated files typically
+                have
+                either a ".html" or ".htm" extension.</li>
+            <li>There are several versions of HTML, with HTML5 being the most recent version.</li>
+        </ul>
+
+        <h2>Features of HTML:</h2>
+
+        <ul>
+            <li>It is platform-independent. For example, Chrome displays the same pages identically across different
+                operating
+                systems such as Mac, Linux, and Windows.</li>
+            <li>Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their
+                website).</li>
+            <li>HTML is a markup language and not a programming language.</li>
+            <li>It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or dynamic)
+                web pages.</li>
+        </ul>
+
+        <h2>Why the Term HyperText & Markup Language?</h2>
+
+        <p>
+            The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup language.'
+            'Hypertext' refers to the linking of text with other documents, while 'markup language' denotes a language
+            that
+            utilizes a specific set of tags.
+        </p>
+
+        <p>
+            Thus, HTML is the practice of displaying text, graphics, audio, video etc. in a certain way using special
+            tags.
+        </p>
+
+    </div>
+    <div id="chapter2" style="display: none;">
+        <h2>HTML Tagst</h2>
+        <p>
+            If you want to build a beautiful website, tags are essential elements that help you achieve that.
+        </p>
+
+        <p>
+            An HTML tag acts as a container for content or other HTML tags. Tags are words enclosed within < and> angle
+                brackets.
+                They serve as keywords that instruct the web browser on how to format and display the content.
+        </p>
+
+        <h3>Commonly Used Tags in HTML</h3>
+
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Specifies the document type.</li>
+            <li><code>&lt;html&gt;</code>: Encloses the entire HTML document.</li>
+            <li><code>&lt;head&gt;</code>: Contains meta-information and links to scripts and stylesheets.</li>
+            <li><code>&lt;body&gt;</code>: Contains the content of the web page.</li>
+        </ul>
+
+        <h4>Metadata Tags</h4>
+
+        <ul>
+            <li><code>&lt;title&gt;</code>: Sets the title of the web page.</li>
+            <li><code>&lt;meta&gt;</code>: Provides metadata such as character set, author, and viewport settings.</li>
+            <li><code>&lt;link&gt;</code>: Links external resources like stylesheets.</li>
+        </ul>
+
+        <h4>Text Formatting Tags</h4>
+
+        <ul>
+            <li><code>&lt;p&gt;</code>: Paragraph.</li>
+            <li><code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</code>: Headings.</li>
+            <li><code>&lt;strong&gt;</code>: Strong emphasis (typically bold).</li>
+            <li><code>&lt;em&gt;</code>: Emphasis (typically italic).</li>
+            <li><code>&lt;br&gt;</code>: Line break.</li>
+            <li><code>&lt;hr&gt;</code>: Horizontal rule.</li>
+        </ul>
+
+        <!-- Other sections follow a similar format -->
+
+        <h3>Paired and Unpaired HTML Tags</h3>
+
+        <p>
+            In HTML, tags can be broadly categorized into two types:
+        </p>
+
+        <ol>
+            <li>
+                <h4>Paired Tags (Container Tags)</h4>
+                <p>These are tags that come in pairs, consisting of an opening tag and a corresponding closing tag. The
+                    content goes between these two tags.</p>
+                <ul>
+                    <li>Opening Tag: The opening tag starts with <code>&lt;</code> and ends with <code>&gt;</code>. For
+                        example, <code>&lt;p&gt;</code>.</li>
+                    <li>Closing Tag: The closing tag also starts with <code>&lt;</code> but includes a forward slash /
+                        before the tag name, and ends with <code>&gt;</code>. For example, <code>&lt;/p&gt;</code>.</li>
+                </ul>
+                <p>Examples:</p>
+                <ul>
+                    <li>Paragraphs: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></li>
+                    <li>Headings: <code>&lt;h1&gt;This is a heading.&lt;/h1&gt;</code></li>
+                </ul>
+            </li>
+            <li>
+                <h4>Unpaired Tags (Self-Closing Tags or Stand-Alone Tags)</h4>
+                <p>These are tags that don't require a closing tag. They are self-contained, encapsulating all the
+                    information within a single tag.</p>
+                <ul>
+                    <li>Self-Closing Tag: A self-closing tag starts with <code>&lt;</code> and ends with
+                        <code>/&gt;</code> (though the / is optional in HTML5). For example, <code>&lt;img /&gt;</code>
+                        or <code>&lt;br /&gt;</code>.
+                    </li>
+                </ul>
+                <p>Examples of self-closing tags:</p>
+                <ul>
+                    <li>Line Break: <code>&lt;br /&gt;</code></li>
+                    <li>Horizontal Rule: <code>&lt;hr /&gt;</code></li>
+                    <li>Image: <code>&lt;img src="image.jpg" alt="An example image" /&gt;</code></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div id="chapter3" style="display: none;">
+        <h2>HTML Elements</h2>
+
+        <p>
+            Beginners often get confused between HTML elements, nested elements, and tags. Let's clarify the difference
+            by understanding each one step-by-step.
+        </p>
+
+        <h3>What is an HTML Element?</h3>
+
+        <p>
+            An HTML element is a complete set that consists of a start tag (or opening tag), content, and an end tag (or
+            closing tag).
+        </p>
+
+        <pre>
+            <code>
+                HTML Element = Start Tag + Content + End Tag
+    
+                For example:
+    
+                &lt;h1&gt;This is our first heading&lt;/h1&gt;
+            </code>
+        </pre>
+
+        <p>
+            In this example, &lt;h1&gt; is the start tag, "This is our first heading" is the content, and &lt;/h1&gt; is
+            the end tag. Together, they form an HTML element.
+        </p>
+
+        <h3>What is a Nested HTML Element?</h3>
+
+        <p>
+            A nested HTML element is an HTML structure where one element is placed inside another element.
+        </p>
+
+        <pre>
+            <code>
+                Nested HTML Element = One HTML Element Inside Another HTML Element
+    
+                For example:
+    
+                &lt;h1&gt;&lt;b&gt;This is our first heading&lt;/b&gt;&lt;/h1&gt;
+            </code>
+        </pre>
+
+        <p>
+            In this example, the &lt;b&gt; element (child) is nested inside the &lt;h1&gt; element (parent).
+        </p>
+
+        <h3>What is an Empty HTML Element?</h3>
+
+        <p>
+            An empty HTML element is one that does not have a closing tag or content. These elements are also known as
+            "void elements" or "self-closing elements."
+        </p>
+
+        <pre>
+            <code>
+                Empty HTML Element = Tags with No Content
+    
+                For example:
+    
+                &lt;br /&gt;
+            </code>
+        </pre>
+
+        <p>
+            This is a break tag, which has no content and no closing tag. It's used to insert a line break within text
+            or other inline elements. The &lt;hr /&gt; tag, used for horizontal rules, is another example of an empty or
+            void element.
+        </p>
+
+        <h3>HTML Tags vs. Elements</h3>
+
+        <ul>
+            <li><strong>HTML Tags:</strong> HTML tags are the markers that define the start and end of an element. They
+                are wrapped in angle brackets, like &lt;p&gt; and &lt;/p&gt;.</li>
+            <li><strong>HTML Elements:</strong> An HTML element includes an opening tag, content, and a closing tag,
+                forming a complete set. For example, &lt;p&gt;This is a paragraph.&lt;/p&gt;.</li>
+        </ul>
+
+        <h3>Key Takeaways</h3>
+
+        <ul>
+            <li>Tags set boundaries; elements include tags plus content.</li>
+            <li>Tags come in pairs (most of the time), whereas elements may include nested elements.</li>
+            <li>Self-closing or void elements like &lt;br /&gt; are still considered elements, even though they don't
+                have a closing tag or content.</li>
+            <li>Elements can be "parent" or "child" when nested, but tags cannot.</li>
+        </ul>
+    </div>
+    <div id="chapter4" style="display: none;">
+        <h2>HTML Comments</h2>
+
+        <p>
+            Comments in HTML are like little notes you leave in your code for yourself or other people. These notes help
+            make the code easier to understand but don't show up on the actual website. The web browser just skips over
+            them!
+        </p>
+
+        <h3>Key Points About HTML Comments</h3>
+
+        <ul>
+            <li>Comments are ignored by web browsers.</li>
+            <li>They aid in code readability and documentation.</li>
+            <li>HTML comments are denoted by <code>&lt;!-- content --&gt;</code>.</li>
+            <li>The shortcut key for commenting out code is Ctrl + /.</li>
+            <li>HTML supports both single-line and multi-line comments.</li>
+        </ul>
+
+        <h3>Types of Comments in HTML</h3>
+
+        <h4>Single-line Comments</h4>
+
+        <p>
+            Single-line comments are contained within one line. They are useful for short annotations.
+        </p>
+
+        <pre>
+            <code>
+                &lt;!-- This is a single-line comment --&gt;
+            </code>
+        </pre>
+
+        <p>
+            As you can see, the text inside the comment is not rendered.
+        </p>
+
+        <h4>Multi-line Comments</h4>
+
+        <p>
+            Multi-line comments span across multiple lines, making them ideal for detailed explanations or temporarily
+            disabling blocks of code.
+        </p>
+
+        <pre>
+            <code>
+                &lt;!-- 
+                This is a multi-line comment.
+                It spans multiple lines.
+                --&gt;
+            </code>
+        </pre>
+    </div>
+    <div id="chapter5" style="display: none;">
+        <h2>HTML Attributes</h2>
+
+        <p>
+            HTML attributes are used to define the characteristics of an HTML element. They are placed within the
+            element's opening tag and consist of two parts: the name and the value.
+        </p>
+
+        <ul>
+            <li><strong>Name:</strong> Specifies the property for that element.</li>
+            <li><strong>Value:</strong> Sets the value of that property for the element.</li>
+        </ul>
+
+        <h3>Types of HTML Attributes</h3>
+
+        <p>There are three main types of HTML attributes:</p>
+
+        <ol>
+            <li><strong>Core Attributes:</strong> Basic attributes that can be applied to most HTML elements. Examples
+                include id, class, and style.</li>
+            <li><strong>Internationalization Attributes:</strong> Attributes that help adapt the document to different
+                languages and regions. Examples include lang and dir.</li>
+            <li><strong>Generic Attributes:</strong> Attributes that provide additional information about the element
+                but don't necessarily affect its appearance or behavior. Examples include data-* attributes for storing
+                custom data private to the page or application.</li>
+        </ol>
+
+        <p>Core attributes are some of the most widely used attributes in HTML. There are four main types:</p>
+
+        <ul>
+            <li><strong>id</strong></li>
+            <li><strong>class</strong></li>
+            <li><strong>title</strong></li>
+            <li><strong>style</strong></li>
+        </ul>
+
+        <h4>ID Attribute</h4>
+
+        <p>
+            The ID attribute is used to assign a unique identifier to an HTML element. Each element with an ID has its
+            own unique identity, similar to how each individual has a unique identity. Multiple elements cannot have the
+            same ID.
+        </p>
+
+        <pre>
+            <code>
+                &lt;p id="html"&gt;This is an HTML tutorial&lt;/p&gt;
+                &lt;p id="python"&gt;This is a Python tutorial&lt;/p&gt;
+            </code>
+        </pre>
+
+        <p>
+            In this example, the ID attribute helps to distinguish between two paragraphs by having different values:
+            "html" and "python".
+        </p>
+
+        <!-- Similar formatting for Class Attribute, Title Attribute, and Style Attribute sections -->
+
+        <h3>Case Sensitivity</h3>
+
+        <p>
+            The HTML standard is flexible about the case of attribute names, allowing them to be written in either
+            uppercase or lowercase, such as "title" or "TITLE." However, for best practices and compatibility with
+            stricter document types like XHTML, the W3C recommends using lowercase attributes.
+        </p>
+    </div>
+    <div id="chapter6" style="display: none;">
+        <h2>HTML Id & Classes</h2>
+
+        <p>
+            HTML offers multiple ways to select and style elements. Two of the most commonly used selectors are IDs and
+            Classes. This blog explores what they are, how to use them, and their differences.
+        </p>
+
+        <h3>What is an ID?</h3>
+
+        <p>
+            An ID is an attribute, a unique identifier assigned to only one HTML element within a page. It is often used
+            for unique styling and JavaScript manipulations.
+        </p>
+
+        <pre>
+            <code>
+                &lt;div id="myUniqueID"&gt;This is a div with an ID.&lt;/div&gt;
+            </code>
+        </pre>
+
+        <h3>What are Classes?</h3>
+
+        <p>
+            The class attribute lets you give the same name to multiple HTML elements. That way, you can easily change
+            their look or behavior all at once. Classes are not unique and can be assigned to multiple elements. They
+            are generally used for applying the same styles or behaviors to a group of elements.
+        </p>
+
+        <pre>
+            <code>
+                &lt;div class="myClass"&gt;This is a div with a class.&lt;/div&gt;
+                &lt;p class="myClass"&gt;This is a paragraph with the same class.&lt;/p&gt;
+            </code>
+        </pre>
+
+        <h3>The Style Tag</h3>
+
+        <p>
+            The style tag in HTML is used to include embedded CSS (Cascading Style Sheets) within an HTML document. It
+            is commonly placed within the &lt;head&gt; section of the HTML file, although it can technically be used in
+            the &lt;body&gt; as well. The style tag allows you to define the look and feel of various HTML elements on
+            the page, including their colors, sizes, margins, and other visual styles.
+        </p>
+
+        <pre>
+            <code>
+                &lt;style&gt;
+                    /* CSS rules go here */
+                    p {
+                        color: blue;
+                        font-size: 18px;
+                    }
+                    .highlight {
+                        background-color: yellow;
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+
+        <p>
+            In this example, we have targeted the second paragraph by its class name in CSS. The style tag is used to
+            add CSS right into HTML. We will learn about CSS and selectors later in the CSS tutorial.
+        </p>
+
+        <h3>Using IDs and Classes in CSS</h3>
+
+        <p>
+            In CSS, elements with IDs are selected using a hash (#) symbol before the ID, and elements with classes are
+            selected using a dot (.) before the class name.
+        </p>
+
+        <pre>
+            <code>
+                /* CSS for ID */
+                #myUniqueID {
+                    background-color: yellow;
+                }
+    
+                /* CSS for Class */
+                .myClass {
+                    font-size: 18px;
+                }
+            </code>
+        </pre>
+
+        <h3>Differences Between IDs and Classes</h3>
+
+        <ul>
+            <li><strong>Uniqueness:</strong> IDs are unique, and classes can be reused.</li>
+            <li><strong>JavaScript:</strong> IDs are often used for JavaScript operations.</li>
+            <li><strong>Styling:</strong> Both can be used for styling, but IDs have higher specificity.</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+
+        <p>
+            Understanding the difference between IDs and Classes is crucial for effective web development. While IDs are
+            for unique elements, classes are for grouping elements.
+        </p>
+    </div>
+    <div id="chapter7" style="display: none;">
+
+        <h2>Your Journey to Creating Your First Website Begins Here!</h2>
+
+        <p>
+            Let's mark this as an important milestone: the creation of your first website! And what's a better way to
+            start than with the traditional "Hello, World!"?
+        </p>
+
+        <h3>Why "Hello, World!"?</h3>
+
+        <p>
+            In the programming world, "Hello, World!" is more than just a phrase. It's a tradition, an emotion, a simple
+            program that teaches you the syntax and gets you started. And guess what? HTML is no different!
+        </p>
+
+        <p>
+            Our first website will display the text 'Hello World.'
+        </p>
+
+        <h3>Let's Get Started: Setting Up Your VS Code</h3>
+
+
+        <h4>Creating a New File</h4>
+
+        <p>
+            Click on "Open Folder" and open a folder somewhere on your computer. I am opening a folder named
+            html-tutorial.
+        </p>
+
+        <p>
+            Once VS Code is open, you'll want to create a new file:
+        </p>
+
+        <ul>
+            <li>Click on the "New File" icon in VS Code.</li>
+            <li>Type the filename as "index.html" and hit Enter.</li>
+        </ul>
+
+        <h4>Pasting the Code</h4>
+
+        <p>
+            Now that your file is ready, copy the following code and paste it into your "index.html" file.
+        </p>
+
+        <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                Hello World
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+
+        <h4>Going Live using the "live server" extension</h4>
+
+        <p>
+            To see your webpage in action, locate the "Go Live" icon at the bottom-right corner of your VS Code window
+            and click it. If you don't see this icon, you probably haven't installed the Live Server extension, which we
+            discussed in a previous tutorial.
+        </p>
+
+        <!-- Insert Image of "Go Live" icon -->
+
+        <p>
+            <strong>Your First Website is Live!</strong> Congratulations! If you've followed along, you should now see
+            your very first website displaying the classic "Hello, World!" message.
+        </p>
+
+        <!-- Insert Image of Live Website -->
+
+        <h3>Live Preview Extension</h3>
+
+        <p>
+            Another useful extension for working with HTML in VS Code is 'HTML Preview.' To install it, simply click on
+            the extensions icon in VS Code and type 'HTML Preview' in the search bar. Install it!
+        </p>
+
+        <!-- Insert Image of HTML Preview Extension -->
+
+        <p>
+            Now, you will see a button within VS Code. Clicking on this button will allow you to preview your HTML right
+            within the editor.
+        </p>
+
+        <!-- Insert Image of Preview Button -->
+
+        <p>
+            Once you click the button, you'll see a live preview of your HTML directly within VS Code.
+        </p>
+
+        <!-- Insert Image of Live Preview -->
+
+        <p>
+            You don't even need a browser to render plain HTML. This live preview feature in VS Code is perfect for this
+            HTML tutorial, allowing you to build and preview your entire HTML website without ever leaving the editor.
+        </p>
+
+        <!-- Insert Image of Live Preview Feature -->
+    </div>
+    <div id="chapter8" style="display: none;">
+        <h2>Heading Tags in HTML</h2>
+
+        <p>
+            In HTML, heading tags ranging from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> are used to define the
+            structure and layout of text on a web page.
+            These tags help create a hierarchical organization of content, making it easier for both users and search
+            engines to understand the page's content.
+        </p>
+
+        <h3><code>&lt;h1&gt;</code> Tag: First-Level Heading</h3>
+
+        <p>
+            The <code>&lt;h1&gt;</code> tag defines the first-level heading and is typically the largest and boldest
+            among all the heading tags. It is often used for the main title of the page.
+        </p>
+
+        <pre>
+          <code>
+            &lt;h1&gt;
+              <!-- Heading content -->
+            &lt;/h1&gt;
+          </code>
+        </pre>
+
+        <h3><code>&lt;h2&gt;</code> Tag: Second-Level Heading</h3>
+
+        <p>
+            The <code>&lt;h2&gt;</code> tag is used for second-level headings and is slightly smaller than the
+            <code>&lt;h1&gt;</code> tag. This is commonly used for section titles.
+        </p>
+
+        <pre>
+          <code>
+            &lt;h2&gt;
+              <!-- Heading content -->
+            &lt;/h2&gt;
+          </code>
+        </pre>
+
+        <h3><code>&lt;h3&gt;</code> Tag: Third-Level Heading</h3>
+
+        <p>
+            The <code>&lt;h3&gt;</code> tag is used for third-level headings. These are smaller than
+            <code>&lt;h2&gt;</code> tags and are often used for sub-sections within an <code>&lt;h2&gt;</code> section.
+        </p>
+
+        <pre>
+          <code>
+            &lt;h3&gt;
+              <!-- Heading content -->
+            &lt;/h3&gt;
+          </code>
+        </pre>
+
+        <h3><code>&lt;h4&gt;</code> Tag: Fourth-Level Heading</h3>
+
+        <p>
+            The <code>&lt;h4&gt;</code> tag defines a fourth-level heading, which is smaller than the
+            <code>&lt;h3&gt;</code> tag. It's often used for sub-sections within an <code>&lt;h3&gt;</code> section.
+        </p>
+
+        <pre>
+          <code>
+            &lt;h4&gt;
+              <!-- Heading content -->
+            &lt;/h4&gt;
+          </code>
+        </pre>
+
+        <h3><code>&lt;h5&gt;</code> Tag: Fifth-Level Heading</h3>
+
+        <p>
+            The <code>&lt;h5&gt;</code> tag is used for fifth-level headings and is smaller than <code>&lt;h4&gt;</code>
+            tags. These are rarely used but can be helpful for deeply nested sections.
+        </p>
+
+        <pre>
+          <code>
+            &lt;h5&gt;
+              <!-- Heading content -->
+            &lt;/h5&gt;
+          </code>
+        </pre>
+
+        <h3><code>&lt;h6&gt;</code> Tag: Sixth-Level Heading</h3>
+
+        <p>
+            The <code>&lt;h6&gt;</code> tag defines the sixth-level heading and is the smallest among all the heading
+            tags. It's rarely used but can serve specific formatting needs.
+        </p>
+
+        <pre>
+          <code>
+            &lt;h6&gt;
+              <!-- Heading content -->
+            &lt;/h6&gt;
+          </code>
+        </pre>
+
+        <h3>Summary</h3>
+
+        <ul>
+            <li><code>&lt;h1&gt;</code> Tag: Used for the main title of the page; largest and most prominent heading.
+            </li>
+            <li><code>&lt;h2&gt;</code> Tag: Used for major section headings; smaller than <code>&lt;h1&gt;</code> but
+                still quite prominent.</li>
+            <li><code>&lt;h3&gt;</code> Tag: Used for sub-sections within an <code>&lt;h2&gt;</code> section; smaller
+                than <code>&lt;h2&gt;</code> but larger than <code>&lt;h4&gt;</code>.</li>
+            <li><code>&lt;h4&gt;</code> Tag: Often used for headings within an <code>&lt;h3&gt;</code> section; useful
+                for further breaking down content.</li>
+            <li><code>&lt;h5&gt;</code> Tag: Rarely used; suitable for deeply nested sections or less important
+                headings.</li>
+            <li><code>&lt;h6&gt;</code> Tag: The smallest heading tag; used for very specific or minor headings, rarely
+                seen in general usage.</li>
+        </ul>
+    </div>
+    <div id="chapter9" style="display: none;">
+        <h2>Paragraph Tag in HTML</h2>
+
+        <h3><code>&lt;p&gt;</code> Tag: Defining a Paragraph in HTML</h3>
+
+        <p>
+            The <code>&lt;p&gt;</code> tag is used to format text into distinct paragraphs. Each paragraph element is
+            separated by automatic empty line spaces above and below the content, providing a clear visual separation.
+            The tag must be closed with its corresponding <code>&lt;/p&gt;</code> tag.
+        </p>
+
+        <pre>
+          <code>
+            &lt;p&gt;
+              <!-- Paragraph content -->
+            &lt;/p&gt;
+          </code>
+        </pre>
+
+        <h3>Attributes and Styling</h3>
+
+        <p>
+            While the <code>&lt;p&gt;</code> tag is straightforward, you can enhance its functionality using various
+            attributes like class or id for CSS styling. You can also include inline styles using the style attribute.
+        </p>
+
+        <pre>
+          <code>
+            &lt;p class="example" style="color: blue;"&gt;
+              This is a styled paragraph.
+            &lt;/p&gt;
+          </code>
+        </pre>
+
+        <h3>Best Practices</h3>
+
+        <p>
+            It's advisable to use the <code>&lt;p&gt;</code> tag for textual content and not for layout control. For
+            layout purposes, consider using HTML5 semantic tags like <code>&lt;section&gt;</code>,
+            <code>&lt;article&gt;</code>, or CSS techniques.
+        </p>
+
+        <p>
+            Don't worry; we will look into semantic tags and other techniques later in this tutorial. Here is how you
+            can create a paragraph in HTML:
+        </p>
+    </div>
+    <div id="chapter10" style="display: none;">
+        <h2>Anchor Tag in HTML</h2>
+
+        <h3>Key Characteristics of HTML Links</h3>
+
+        <ul>
+            <li>Specified by the <code>&lt;a&gt;</code> tag.</li>
+            <li>Also known as hyperlinks.</li>
+            <li>Used to link one document to another.</li>
+            <li>Includes a closing tag <code>&lt;/a&gt;</code>.</li>
+        </ul>
+
+        <h3>Syntax of HTML Links</h3>
+
+        <pre>
+          <code>
+            &lt;a href="Your specified path"&gt;
+              content
+            &lt;/a&gt;
+          </code>
+        </pre>
+
+        <h3>Essential Attributes of the Anchor Tag</h3>
+
+        <p>HTML links primarily use two attributes:</p>
+
+        <ul>
+            <li><code>href</code> attribute: Defines the URL the link points to.</li>
+            <li><code>target</code> attribute: Specifies where to open the linked document.</li>
+        </ul>
+
+        <h3>Target Attribute Values</h3>
+
+        <ul>
+            <li><code>_blank</code>: Opens the linked document in a new window or tab.</li>
+            <li><code>_top</code>: Opens the document in the full body of the window.</li>
+            <li><code>_self</code>: Opens the document in the same window or tab (default behavior).</li>
+            <li><code>_parent</code>: Opens the linked document in the parent frame.</li>
+        </ul>
+
+        <h3>Linking to Specific Page Sections</h3>
+
+        <p>
+            To link to a specific section of a webpage, you can:
+        </p>
+
+        <ul>
+            <li>Use the <code>name</code> or <code>id</code> attribute of the target section.</li>
+            <li>Use a hyperlink with a hash (<code>#</code>) followed by the target <code>id</code> or
+                <code>name</code>.
+            </li>
+        </ul>
+
+        <h3>Example</h3>
+
+        <p>
+            Let's say you have a long webpage with multiple sections, and you want to create a link at the top that,
+            when clicked, takes the user directly to a specific section further down the page. You can do this using
+            HTML links that target specific sections.
+        </p>
+
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;My Webpage&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+      
+              &lt;!-- Link at the top --&gt;
+              &lt;a href="#gardening-tips"&gt;Go to Gardening Tips&lt;/a&gt;
+      
+              &lt;!-- Some content --&gt;
+              &lt;p&gt;Here is some other content...&lt;/p&gt;
+      
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+        </pre>
+    </div>
+    <div id="chapter11" style="display: none;">
+        <h2>Types of HTML Lists</h2>
+
+        <p>
+            Our day-to-day lives often involve the use of lists. For example, when we go shopping, the bill we receive
+            includes a list of all the items we've purchased.
+            In a similar manner, web developers use lists to neatly display data on websites.
+        </p>
+
+        <ul>
+            <li><strong>Unordered List:</strong> Displays items using bullets.</li>
+            <li><strong>Ordered List:</strong> Displays items in a numerical sequence, and supports various numbering
+                styles like Arabic numerals, Roman numerals, and so on.</li>
+            <li><strong>Definition List:</strong> Organizes items in a format similar to a dictionary, with terms and
+                their corresponding definitions.</li>
+        </ul>
+
+        <h3>An Unordered List</h3>
+
+        <p>
+            An unordered list uses bullets to display items. It is suitable for listing items where the order doesn't
+            matter. We will soon explore unordered lists in great detail.
+        </p>
+
+        <h3>An Ordered List</h3>
+
+        <p>
+            An ordered list uses numbers or other types of markers to indicate the sequence of items. It's ideal for
+            listing steps in a process or ranking items in order of importance. We will soon explore ordered lists in
+            great detail.
+        </p>
+
+
+        <h3>A Definition List</h3>
+
+        <p>
+            A definition list arranges items in a way similar to a dictionary, with a term followed by its definition.
+            This is useful for glossaries or to display metadata.
+        </p>
+    </div>
+    <div id="chapter12" style="display: none;">
+        <h2>HTML Unordered List</h2>
+
+        <p>
+            An unordered list is a list of items that are not arranged in any specific, sequential order.
+            Unlike ordered lists, the items in an unordered list are typically marked with bullet points, dashes, or
+            other symbols to indicate list membership, but these markers do not imply any particular order.
+        </p>
+
+        <h3>Key Characteristics of Unordered Lists</h3>
+
+        <ul>
+            <li>No specific sequence is required.</li>
+            <li>Typically displayed as bullet points.</li>
+            <li>Defined using the &lt;ul&gt; tag.</li>
+            <li>Individual items use the &lt;li&gt; tag.</li>
+        </ul>
+
+        <h3>Basic Example</h3>
+
+        <ul>
+            <li>Pen</li>
+            <li>Pencil</li>
+            <li>Eraser</li>
+        </ul>
+
+
+        <h3>Customizing Bullet Points with 'type' Attribute</h3>
+
+        <p>You can specify the style of bullet points using the type attribute. It supports three values:</p>
+
+        <ul type="disc">
+            <li>Notebook</li>
+            <li>Marker</li>
+        </ul>
+    </div>
+    <div id="chapter13" style="display: none;">
+        <h2>HTML Ordered List</h2>
+
+        <p>
+            An ordered list is a list of items that are arranged in a specific, sequential order. Each item in the list
+            is usually numbered to indicate its position in the sequence.
+            Ordered lists are commonly used when the sequence of the items is important, such as in step-by-step
+            instructions or rankings.
+        </p>
+
+
+
+        <h3>Key Points</h3>
+
+        <ul>
+            <li>Ordered lists are used for items that follow a sequence.</li>
+            <li>They are created using the &lt;ol&gt; (Ordered List) tag.</li>
+            <li>List items are enclosed within &lt;li&gt; (List Item) tags.</li>
+        </ul>
+
+        <h3>Basic Example</h3>
+
+        <ol>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Litchi</li>
+        </ol>
+
+        <p><strong>Output:</strong></p>
+        <p>Mango</p>
+        <p>Orange</p>
+        <p>Litchi</p>
+
+        <h3>Setting the 'type' Attribute</h3>
+
+        <p>The type attribute specifies the style of numbering. You have several options:</p>
+
+        <ol type="I">
+            <li>Uppercase Roman Numerals</li>
+            <li>Uppercase Roman Numerals</li>
+        </ol>
+
+        <h3>Setting the 'start' Attribute</h3>
+
+        <p>The start attribute specifies the starting number for the list.</p>
+
+        <ol type="A" start="3">
+            <li>Pen</li>
+            <li>Pencil</li>
+        </ol>
+
+        <p><strong>Output:</strong></p>
+        <p>Pen</p>
+        <p>Pencil</p>
+    </div>
+    <div id="chapter14" style="display: none;">
+        <h2>HTML Tables</h2>
+
+        <p>
+            HTML tables allow you to arrange data like text, images, and links in rows and columns. You use the
+            &lt;table&gt; tag to start and end a table.
+        </p>
+
+        <h3>Syntax of HTML Table</h3>
+
+        <pre>
+      &lt;table&gt;
+        // table content
+      &lt;/table&gt;
+        </pre>
+
+        <h3>Key Elements of HTML Table</h3>
+
+        <ul>
+            <li>&lt;table&gt;: Defines the table itself.</li>
+            <li>&lt;tr&gt;: Used for table rows.</li>
+            <li>&lt;th&gt;: Used for table headings.</li>
+            <li>&lt;td&gt;: Used for table cells (data).</li>
+        </ul>
+
+        <h3>Basic Table Structure</h3>
+
+        <pre>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Harry&lt;/td&gt;
+          &lt;td&gt;100&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+        </pre>
+
+        <h3>rowspan and colspan Attributes</h3>
+
+        <p>
+            Rowspan: If you want a table cell to span multiple rows, you can use the rowspan attribute.
+        </p>
+
+        <pre>
+      &lt;td rowspan="value"&gt;
+        </pre>
+
+        <p>
+            Colspan: If you want a table cell to span multiple columns, you can use the colspan attribute.
+        </p>
+
+        <pre>
+      &lt;td colspan="value"&gt;
+        </pre>
+
+        <h3>Visual Representation of Rowspan and Colspan</h3>
+
+
+        <h3>Examples</h3>
+
+        <p>
+            Here are simple examples to demonstrate the use of rowspan and colspan in HTML tables.
+        </p>
+
+        <h4>Example for Colspan:</h4>
+
+        <pre>
+      &lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;td colspan="2"&gt;Merged Columns&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Column 1&lt;/td&gt;
+          &lt;td&gt;Column 2&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+        </pre>
+
+        <h4>Example for Rowspan:</h4>
+
+        <pre>
+      &lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+          &lt;td rowspan="2"&gt;Merged Rows&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+        </pre>
+    </div>
+    <div id="chapter15" style="display: none;">
+        <h2>Introduction to HTML Forms</h2>
+
+        <p>
+            HTML forms are essential for collecting user input on web pages. Whether it's a search bar, a login screen,
+            or a multi-field registration form, HTML forms play a key role in web interactions. They enable users to
+            submit data, which can be processed, stored, or returned by a server.
+        </p>
+
+        <h3>Why Do We Use Forms?</h3>
+
+        <p>
+            Forms serve as the gateway between the user and the server, allowing for dynamic, interactive web
+            experiences. They are crucial for tasks such as user authentication, data submission, feedback collection,
+            and more. Simply put, forms make websites more engaging and functional.
+        </p>
+
+        <h3>HTML Forms Structure:</h3>
+
+        <p>
+            The fundamental structure of an HTML form is encapsulated within the &lt;form&gt; tags. Inside these tags,
+            you'll place various form controls like text fields, checkboxes, radio buttons, and buttons for submitting
+            the form.
+        </p>
+
+        <pre>
+&lt;form action="/submit" method="post"&gt;
+  &lt;!-- Text input for username --&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username" required&gt;
+  &lt;br&gt;&lt;br&gt;
+
+  &lt;!-- Password input --&gt;
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password" required&gt;
+  &lt;br&gt;&lt;br&gt;
+
+  &lt;!-- Radio buttons for gender --&gt;
+  &lt;label&gt;Gender:&lt;/label&gt;
+  &lt;input type="radio" id="male" name="gender" value="male"&gt;
+  &lt;label for="male"&gt;Male&lt;/label&gt;
+  &lt;input type="radio" id="female" name="gender" value="female"&gt;
+  &lt;label for="female"&gt;Female&lt;/label&gt;
+  &lt;br&gt;&lt;br&gt;
+
+  &lt;!-- Submit button --&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+  </pre>
+
+        <h3>How to Use Form Controls?</h3>
+
+        <p>
+            The &lt;input&gt; tag is commonly used to create form controls. The attributes of this tag define the
+            control's behavior.
+        </p>
+
+        <pre>
+&lt;input type="" name="" value=""&gt;
+  </pre>
+
+        <p>
+            The "type" attribute specifies the type of input control (e.g., text, password, checkbox).
+        </p>
+
+        <p>
+            The "name" attribute is used for identifying the control, especially when the data is sent to the server.
+        </p>
+
+        <p>
+            The "value" attribute sets a default value for the control, which the user can overwrite.
+        </p>
+    </div>
+    <div id="chapter16" style="display: none;">
+        <h2>HTML Input Types</h2>
+
+        <p>
+            Input types in HTML forms are the backbone of interactive web applications. They allow users to send
+            information to web servers for various purposes like searching, logging in, or providing feedback. In this
+            blog, we'll explore common HTML input types: text, password, radio, and checkbox.
+        </p>
+
+        <h3>Text Input</h3>
+
+        <p>
+            The text input type is the most basic form of input and is widely used for collecting simple text data.
+        </p>
+
+        <pre>
+      &lt;input type="text" name="username" placeholder="Enter your username"&gt;
+        </pre>
+
+        <p>
+            In the above example, the placeholder attribute provides a hint to the user about what to enter.
+        </p>
+
+        <h3>Password Input</h3>
+
+        <p>
+            The password input type is similar to the text type but hides the characters entered by the user for
+            security reasons.
+        </p>
+
+        <pre>
+      &lt;input type="password" name="password" placeholder="Enter your password"&gt;
+        </pre>
+
+        <h3>Radio Buttons</h3>
+
+        <p>
+            Radio buttons are used when you want the user to select only one option from a set of choices.
+        </p>
+
+        <pre>
+      &lt;input type="radio" id="male" name="gender" value="male"&gt;
+      &lt;label for="male"&gt;Male&lt;/label&gt;
+      &lt;input type="radio" id="female" name="gender" value="female"&gt;
+      &lt;label for="female"&gt;Female&lt;/label&gt;
+        </pre>
+
+        <h3>Checkbox</h3>
+
+        <p>
+            Checkboxes allow the user to select multiple options from a set.
+        </p>
+
+        <pre>
+      &lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;
+      &lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;
+        </pre>
+
+        <h3>More Input Types</h3>
+
+        <p>
+            Here is a comprehensive list of input types you can use in HTML:
+        </p>
+
+        <table border="1">
+            <tr>
+                <th>Input Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>Allows the user to type a single line of text.</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>Allows the user to type a password.</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>Represents a button that, when pressed, submits the form.</td>
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td>Represents a button that, when pressed, resets all the form controls to their initial values.</td>
+            </tr>
+            <!-- ... (continue the table with other input types) -->
+        </table>
+
+        <h3>Conclusion</h3>
+
+        <p>
+            Understanding the different types of HTML input is crucial for creating interactive and user-friendly forms.
+            Each input type serves a specific purpose, making it easier to collect, validate, and process user data.
+        </p>
+    </div>
+    <div id="chapter17" style="display: none;">
+        <h2>Textarea & Select</h2>
+
+        <p>
+            In addition to the basic input types, HTML forms offer other controls like textarea and select for richer
+            user interaction. These elements allow for more complex data collection and provide a better user
+            experience. In this blog, we will dive into these form controls and provide examples.
+        </p>
+
+        <h3>The Textarea Element</h3>
+
+        <p>
+            The textarea element is used when you need multiline text input from the user. This is particularly useful
+            for comments, reviews, or any other type of input where the length is unpredictable.
+        </p>
+
+        <pre>
+&lt;textarea name="comment" rows="4" cols="50"&gt;
+  Enter your comment here...
+&lt;/textarea&gt;
+  </pre>
+
+        <p>
+            The <code>rows</code> and <code>cols</code> attributes define the visible dimensions of the textarea.
+        </p>
+
+        <h3>The Select Element</h3>
+
+        <p>
+            The select element creates a dropdown menu for the user. It is useful when you have a predefined list of
+            options for the user to choose from.
+        </p>
+
+        <pre>
+&lt;select name="fruits"&gt;
+  &lt;option value="apple"&gt;Apple&lt;/option&gt;
+  &lt;option value="banana"&gt;Banana&lt;/option&gt;
+  &lt;option value="cherry"&gt;Cherry&lt;/option&gt;
+&lt;/select&gt;
+  </pre>
+
+        <p>
+            Each option inside the select tag represents an item in the dropdown list.
+        </p>
+
+        <h3>Combining Textarea and Select</h3>
+
+        <p>
+            You can combine textarea and select in the same form to capture varied types of user input.
+        </p>
+
+        <pre>
+&lt;form action="/submit"&gt;
+  &lt;textarea name="comment" rows="4" cols="50"&gt;Enter your comment here...&lt;/textarea&gt;
+  &lt;select name="fruits"&gt;
+    &lt;option value="apple"&gt;Apple&lt;/option&gt;
+    &lt;option value="banana"&gt;Banana&lt;/option&gt;
+    &lt;option value="cherry"&gt;Cherry&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+  </pre>
+    </div>
+
+    <script>
+        // Show the content for the first chapter initially
+        showChapter(1);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraftHub/CSS</title>
+    <link rel="stylesheet" href="../CSS-files/css-doc.css">
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <script src="../javascript-files/css-doc.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="css-doc">
+        <div class="navbar">
+            <h3 class="heading-navigation">Introduction</h3>
+            <span onclick="showChapter(1)">CSS Introduction</span>
+            <span onclick="showChapter(2)">Syntax of CSS</span>
+            <span onclick="showChapter(3)">Ways to add CSS</span>
+            <span onclick="showChapter(4)">CSS Selectors</span>
+            <span onclick="showChapter(5)">CSS Comments</span>
+            <!-- Add more spans for additional chapters -->
+
+            <h3 class="heading-navigation">CSS Propertirs</h3>
+            <span onclick="showChapter(6)">CSS Color</span>
+            <span onclick="showChapter(7)">CSS backgrounds</span>
+            <span onclick="showChapter(8)">CSS Borders</span>
+            <span onclick="showChapter(9)">CSS Images</span>
+            <span onclick="showChapter(10)">CSS Fonts</span>
+            <span onclick="showChapter(11)">CSS Padding</span>
+            <span onclick="showChapter(12)">CSS Margin</span>
+            <span onclick="showChapter(13)">CSS Hover</span>
+            <span onclick="showChapter(14)">CSS Links</span>
+            <span onclick="showChapter(15)">CSS Buttons</span>
+            <span onclick="showChapter(16)">CSS Float</span>
+            <span onclick="showChapter(17)">CSS positioning</span>
+            <span onclick="showChapter(18)">CSS Z-index</span>
+            <!-- Add more spans for additional chapters -->
+            <h3 class="heading-navigation">CSS Designing</h3>
+            <span onclick="showChapter(19)">CSS Display</span>
+            <span onclick="showChapter(20)">CSS Flexbox</span>
+            <span onclick="showChapter(21)">CSS Grid</span>
+            <span onclick="showChapter(22)">CSS Media Queries</span>
+
+        </div>
+
+        <main class="contentarea">
+            <div class="buttons top-btn">
+                <button id="prevBtn" class="btn" onclick="prevChapter()">Previous</button>
+                <button id="Homebtn" class="btn" onclick="changePage7()">Home</button>
+                <button id="nextBtn" class="btn" onclick="nextChapter()">Next</button>
+            </div>
+            <div id="content">
+                <h2>Welcome to My Course!</h2>
+                <p>Welcome to My CSS Notes! 👋 Hey there!<br>
+                    I'm excited to share my knowledge and tips on Cascading Style Sheets (CSS) with you.<br>
+                    Whether you're a beginner or an experienced developer, I hope you find these notes helpful.<br>
+                    Feel free to explore and learn. If you have any questions or suggestions, don't hesitate to reach
+                    out.<br>
+                    Happy coding! Cheers, Aniket Khonde</p>
+            </div>
+            <div class="buttons bottom-btn">
+                <button id="prevBtn1" class="btn" onclick="prevChapter()">Previous</button>
+                <button id="Homebtn1" class="btn" onclick="changePage7()">Home</button>
+                <button id="nextBtn1" class="btn" onclick="nextChapter()">Next</button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Define content for each chapter -->
+    <div id="chapter1" style="display: none;">
+        <h2>Chapter 1 Introduction</h2>
+        <h1>Let's start this journey of learning CSS together.</h1>
+        <p>I'm Aniket Khonde, This tutorial will serve as a resource for students to learn CSS and use the code from
+            these lessons as a reference.</p>
+
+        <p>Without further ado, let's dive into learning CSS.</p>
+
+        <h2>What is CSS?</h2>
+        <p>CSS stands for Cascading Style Sheets. It is a stylesheet language that is used to describe the visual
+            presentation of a web page written in HTML (Hypertext Markup Language).</p>
+
+        <p>HTML creates the structure of the page, while CSS adds styling to that structure. This tutorial assumes that
+            you have prior knowledge of HTML. If that's not the case, you can follow the HTML tutorial first.</p>
+
+        <h2>Why the word "cascade"?</h2>
+        <p>The term "cascade" refers to the priority scheme determining which CSS rules are applied when multiple rules
+            target an element. This scheme takes into account specificity and inheritance, ensuring that the most
+            specific and latest rules are applied.</p>
+
+        <h2>Why use CSS?</h2>
+        <p>CSS is used to provide styling to HTML elements, making web pages visually appealing and user-friendly.</p>
+
+        <h2>Analogy to Understand CSS</h2>
+        <p>Imagine reading a book with only plain text. It's quite dull, isn't it? Now picture a book enriched with
+            different colors, fonts, and styles. That's what CSS does to a webpage.</p>
+
+        <h2>How does CSS work?</h2>
+        <p>CSS operates by selecting HTML elements and applying styles to them. Styles dictate the appearance of
+            elements on a webpage. You can target HTML elements, classes, or IDs, defining properties like colors,
+            fonts, margins, etc.</p>
+
+        <pre>
+            <code>
+                /* Example of a CSS rule */
+                selector {
+                    property: value;
+                }
+            </code>
+        </pre>
+
+        <p><strong>Quick Follow-Up Task:</strong></p>
+        <ul>
+            <li>Right-click on the screen and select "Inspect" or press (Ctrl + Shift + C).</li>
+            <li>Click on the arrow icon in the top-left corner of the inspection pane.</li>
+            <li>Select elements on the page to toggle the CSS rules.</li>
+        </ul>
+
+        <h2>Key Features of CSS:</h2>
+        <ul>
+            <li>Styles and layouts of web pages.</li>
+            <li>Works alongside HTML and XML documents.</li>
+            <li>Enables responsive design for different screen sizes.</li>
+            <li>Supports interactive effects like hover states and animations.</li>
+            <li>CSS is now modularized, with ongoing updates rather than version numbers.</li>
+            <li>Allows reusability of the same rules across multiple HTML documents.</li>
+        </ul>
+
+        <h2>A Bit of History</h2>
+        <p>CSS was created by Håkon Wium Lie to enhance the visual aspects of websites. Initially, websites were mainly
+            used by researchers and lacked visual appeal. As websites became more widespread, the need for better design
+            grew.</p>
+
+    </div>
+    <div id="chapter2" style="display: none;">
+        <p>
+        <h2>Syntax of CSS</h2>
+        <br>
+        CSS follows a rule-based structure. Each rule consists of a selector and a declaration block. Selectors pick the
+        HTML elements, while declaration blocks contain pairs of properties and values.
+        </p>
+
+        <p>
+        <h2>The general syntax for writing CSS:</h2>
+        <br>
+        <code>
+                selector {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;property: value;<br>
+                }
+            </code>
+        </p>
+
+        <p>
+            <strong>Note:</strong> Semi-colon (;) at the end of each new property and property value is IMPORTANT.
+        </p>
+
+        <p>
+            <strong>For example:</strong>
+            <br>
+            <code>
+                h2 {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+                }
+            </code>
+            <br>
+            In the example:
+            <br>
+        <ul>
+            <li><strong>h2:</strong> h2 is the selector.</li>
+            <li><strong>color:</strong> It's the property.</li>
+            <li><strong>blue:</strong> The property value.</li>
+        </ul>
+        </p>
+
+        <p>
+            <strong>Within the declaration block, there can be multiple pairs of properties and values.</strong>
+            <br>
+            <strong>Consider the example:</strong>
+            <br>
+            <code>
+                button {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;background-color: black;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;border: transparent;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;<br>
+                }
+            </code>
+            <br>
+            Here, 'button' is the selector, and there are multiple pairs of properties and values. Each pair is
+            separated by a semicolon ";".
+        </p>
+    </div>
+    <div id="chapter3" style="display: none;">
+        <h2>Ways to Add CSS</h2>
+
+        <p>
+            There are three different ways to add CSS to an HTML page, which are:
+        </p>
+
+        <ul>
+            <li><strong>Inline CSS:</strong> Inline CSS is used to add custom properties to specific elements. The added
+                style will only reflect on that particular element only.</li>
+
+            <p>To use inline CSS, Insert the "style" attribute within the HTML element's opening tag.</p>
+
+            <code>&lt;h1 style="color: purple;">I'm Harry&lt;/h1></code>
+            <code>&lt;h2>I'm CodeWithHarry&lt;/h2></code>
+
+            <p>Here, the inline style of color: purple is attached to only the h1 tag.</p>
+
+            <p>Note: The downside of using inline CSS is that once the project complexity increases, it will become
+                difficult to manage the styles of each and individual elements.</p>
+        </ul>
+
+        <ul>
+            <li><strong>Internal CSS:</strong> Internal CSS is used to apply custom style to multiple elements on the
+                same page. The style can be used throughout the HTML page.</li>
+
+            <p>Internal CSS is defined in a style block, which will be inside the head section.</p>
+
+            <code>
+                &lt;head&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+                    <br>&lt;/head&gt;
+                </code>
+
+            <p>Here, in the style block, selector p will target all p tags and assign them color: red.</p>
+
+            <p>Note: The &lt;style&gt; block should always be in the &lt;head&gt; section.</p>
+        </ul>
+
+        <ul>
+            <li><strong>External CSS:</strong> External CSS works similarly to internal CSS but with a twist. Instead of
+                adding the styles within the HTML file, we create a separate file with .css extension. This file will
+                hold all the styling details. Then, we link this file to the HTML page, giving it the instructions on
+                how to look.</li>
+
+            <p>The following video will explain how to link a CSS file to HTML.</p>
+
+            <p>There is a new &lt;link&gt; tag in the head section, and this link tag has rel and href properties.</p>
+
+            <p>The following points will explain each keyword's meaning:</p>
+
+            <code>
+                &lt;link rel="stylesheet" href="style.css"&gt;
+            </code>
+
+            <p>Here, &lt;link&gt; tag is used to create links between different resources, like stylesheets, fonts, and
+                more. In our case, we are using a link tag to link the CSS file with the HTML file.</p>
+            <p>rel="stylesheet": rel stands for relationship; this defines the type of relationship between the HTML
+                document and the linked resource. When set to "stylesheet", it specifies that the linked resource is a
+                stylesheet that will be used to style the HTML content.</p>
+            <p>href="style.css": The href attribute stands for "hypertext reference." It specifies the path or URL to
+                the external resource we want to link. In this case, it's the path to the external CSS file called
+                "style.css".</p>
+
+            <code>&lt;html lang="en"&gt;
+                <br>&lt;head&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;CodeWithHarry&lt;/title&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;
+                    <br>&lt;/head&gt;
+                </code>
+
+            <p>Consider the code snippets:</p>
+        </ul>
+        <div id="chapter4" style="display: none;">
+            <h2>CSS Selectors</h2>
+
+            <p>
+                CSS selectors allow us to choose specific elements and apply styles to them. Suppose we want to add a
+                custom style to only a specific tag(s). There, we can make use of CSS selector.
+            </p>
+
+            <p>
+                There are different types of CSS selectors, which are as follows:
+            </p>
+
+            <ul>
+                <li><strong>Universal Selector</strong></li>
+                <li><strong>Element Selector</strong></li>
+                <li><strong>ID Selector</strong></li>
+                <li><strong>Class Selector</strong></li>
+                <li><strong>Group Selector</strong></li>
+            </ul>
+
+            <p>
+                Let's look into these selectors one by one
+            </p>
+
+            <h3>Universal Selector</h3>
+            <p>
+                Universal selector represented by "*" targets all the HTML elements on the page.
+            </p>
+
+            <p>
+                The syntax of Universal Selector is as follows:
+            </p>
+
+            <code>
+            * {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;property: value;<br>
+            }
+        </code>
+
+            <p>
+                Consider the code snippet:
+            </p>
+
+            <code>
+            &lt;html&gt;
+            <br>&lt;head&gt;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* {
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: purple;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+            <br>&lt;/head&gt;
+            </code>
+
+
+            <p>
+                Notice, Irrespective of the tag, the style will be applied to all the elements and tags.
+            </p>
+
+            <!-- Repeat the above format for Element Selector, ID Selector, Class Selector, and Group Selector -->
+
+            <h2>Summary:</h2>
+            <ul>
+                <li><strong>Universal Selector(*)</strong>: Target the entire page.</li>
+                <li><strong>Element Selector</strong>: Target a specific element.</li>
+                <li><strong>ID Selector(#)</strong>: Target element with a specific ID.</li>
+                <li><strong>Class Selector(.)</strong>: Target element(s) with the same class.</li>
+                <li><strong>Group Selector</strong>: Group elements and target them.</li>
+            </ul>
+
+        </div>
+        <div id="chapter5" style="display: none;">
+            <h2>CSS Comments</h2>
+
+            <p>
+                Comments help with documentation and are helpful for the future users who read that code so that they
+                can understand it easily.
+            </p>
+
+            <p>
+                Comments are ignored by the browser and don't affect the styling or layout. CSS Comments are enclosed
+                between /* and */.
+            </p>
+
+            <p>
+                There are two types of comments in CSS:
+            </p>
+
+            <ul>
+                <li><strong>Single-line comment:</strong></li>
+                <p>
+                    Single-line comments are contained within one line. They are useful for short annotations.
+                </p>
+
+                <p><strong>Syntax:</strong></p>
+
+                <code>
+                selector {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;/* property: value */<br>
+                }
+            </code>
+
+                <p><strong>For example:</strong></p>
+
+                <code>
+                /* This is a single line comment */<br>
+                p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;/* color: red */<br>
+                }
+            </code>
+
+                <p>
+                    Here, the comment is between /* and */.
+                </p>
+
+                <li><strong>Multi-line comments:</strong></li>
+                <p>
+                    Multi-line comments span across multiple lines, making them ideal for detailed explanations or
+                    temporarily disabling blocks of code.
+                </p>
+
+                <p><strong>Syntax:</strong></p>
+
+                <code>
+                selector {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;/* property1: value1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;property1: value1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;property1: value1 */<br>
+                }
+            </code>
+
+                <p>
+                    These are similar to single-line comments, but this helps to comment large descriptions, notes, etc.
+                </p>
+
+                <p><strong>For example:</strong></p>
+
+                <code>
+                /* This is a<br>
+                multi line<br>
+                comment */<br>
+                p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;/* color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;background-color: purple; */<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: purple;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;background-color: red;<br>
+                }
+            </code>
+            </ul>
+        </div>
+        <div id="chapter6" style="display: none;">
+            <h2>CSS Colors</h2>
+
+            <p>
+                The color property of CSS helps to set the color of the HTML element(s). This helps to set the
+                foreground color of text, text decorations, and borders.
+            </p>
+
+            <h3>Syntax:</h3>
+            <code>
+            /* Syntax<br>
+            selector {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: value<br>
+            }<br>
+            */
+        </code>
+
+            <code>
+            selector {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;/* colorname can be any colour, such as red, blue, yellow, purple, green, etc. */<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: colorname<br>
+            }
+        </code>
+
+            <p>Note: In CSS we use color, not colour.</p>
+
+            <h3>Example:</h3>
+
+            <code>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;style&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;p{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: purple;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;Hello World&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;CodeWithHarry&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </code>
+
+
+            <h3>Hexadecimal notation:</h3>
+
+            <p>
+                The hex code consists of a hash(#) symbol followed by six characters. These six characters are arranged
+                into a set of three pairs (RR, GG, and BB).
+            </p>
+        </div>
+        <div id="chapter7" style="display: none;">
+
+
+            <h2>CSS Backgrounds</h2>
+
+            <h2>The Background Property in CSS</h2>
+
+            <p>The <code>background:</code> property in CSS is a versatile and powerful property that allows you to set
+                various background-related styles for an element. It can be applied to most HTML elements to control the
+                appearance of their backgrounds.</p>
+
+            <p>The <code>background</code> property is shorthand for several individual background-related properties,
+                and it can include values for the following properties:</p>
+
+            <ul>
+                <li><strong>background-color:</strong>
+                    <br>Defines the background color of an element.
+                    <pre><code>background-color: #f0f0f0;</code></pre>
+                </li>
+                <br>
+
+                <li><strong>background-image:</strong>
+                    <br>Specifies the URL of an image to be used as the background.
+                    <pre><code>background-image: url('background.jpg');</code></pre>
+                </li>
+                <br>
+
+                <li><strong>background-repeat:</strong>
+                    <br>Determines how a background image should be repeated.
+                    <pre><code>background-repeat: repeat-x;</code></pre>
+                    Common values include repeat, repeat-x, repeat-y, and no-repeat.
+                </li>
+                <br>
+
+                <li><strong>background-position:</strong>
+                    <br>Sets the starting position of the background image.
+                    <pre><code>background-position: center top;</code></pre>
+                    Values can be a combination of keywords (center, top, bottom, left, right) or percentages.
+                </li>
+                <br>
+
+                <li><strong>background-size:</strong>
+                    <br>Specifies the size of the background image.
+                    <pre><code>background-size: cover;</code></pre>
+                    Values can be auto, cover, contain, or specific dimensions.
+                </li>
+                <br>
+
+
+                <li><strong>background-attachment:</strong>
+                    <br>Specifies whether the background image should scroll with the content.
+                    <pre><code>background-attachment: fixed;</code></pre>
+                    Values include scroll, fixed, and local.
+                </li>
+                <br>
+
+
+                <li><strong>background-origin:</strong>
+                    <br>Sets the background positioning area for the background-image property.
+                    <pre><code>background-origin: content-box;</code></pre>
+                    Values can be padding-box, border-box, or content-box.
+                </li>
+
+                <br>
+
+                <li><strong>background-clip:</strong>
+                    <br>Specifies how far the background should extend within an element.
+                    <pre><code>background-clip: padding-box;</code></pre>
+                    Values include border-box, padding-box, and content-box.
+                </li>
+
+
+                <br>
+                <li><strong>background-blend-mode:</strong>
+                    <br>Specifies how the background image should blend with the content.
+                    <pre><code>background-blend-mode: multiply;</code></pre>
+                    Values include various blend modes like multiply, screen, overlay, etc.
+                </li>
+            </ul>
+
+            <p>You can use the shorthand <code>background</code> property to combine several of these values into a
+                single declaration. For example:</p>
+
+            <pre><code>background: #f0f0f0 url('background.jpg') center/cover no-repeat fixed;</code></pre>
+
+            <p>This sets the background color, image, position, size, repetition, and attachment in one line. Adjust the
+                values based on your design requirements.</p>
+            <!-- Insert Image of Live Preview Feature -->
+        </div>
+        <div id="chapter8" style="display: none;">
+            <h2>The Border Property in CSS</h2>
+
+            <p>In CSS, borders are used to define the edges of an element. The <code>border</code> property is a
+                shorthand property that combines various individual border-related properties. These properties allow
+                you to control the style, width, and color of an element's borders. Here are the key components of the
+                <code>border</code> property:</p>
+
+            <ul>
+                <li><strong>border-width:</strong>
+                    <br>Specifies the width of the border. You can set it to a specific value (e.g., 2px), use keywords
+                    (thin, medium, thick), or use a combination of values for different sides (top, right, bottom,
+                    left).
+                    <pre><code>border-width: 2px;</code></pre>
+                    You can also set individual widths for each side:
+                    <pre><code>border-width: 2px 4px 3px 1px; /* top right bottom left */</code></pre>
+                </li>
+
+                <li><strong>border-style:</strong>
+                    <br>Defines the style of the border. Common values include solid, dashed, dotted, double, groove,
+                    ridge, inset, and outset.
+                    <pre><code>border-style: solid;</code></pre>
+                    You can set different styles for each side as well:
+                    <pre><code>border-style: solid dashed dotted double; /* top right bottom left */</code></pre>
+                </li>
+
+                <li><strong>border-color:</strong>
+                    <br>Sets the color of the border. You can use color names, hex codes, RGB values, or other valid
+                    color representations.
+                    <pre><code>border-color: #333;</code></pre>
+                    Like width and style, you can specify individual colors for each side:
+                    <pre><code>border-color: red green blue yellow; /* top right bottom left */</code></pre>
+                </li>
+
+                <li><strong>border-radius:</strong>
+                    <br>Adds rounded corners to the element. It accepts one to four values, indicating the radius of the
+                    corners.
+                    <pre><code>border-radius: 10px;</code></pre>
+                    For individual corners:
+                    <pre><code>border-radius: 10px 5px 15px 20px; /* top-left top-right bottom-right bottom-left */</code></pre>
+                </li>
+
+                <li><strong>border:</strong>
+                    <br>The shorthand property that combines <code>border-width</code>, <code>border-style</code>, and
+                    <code>border-color</code>. You can use it to set all three properties in one declaration.
+                    <pre><code>border: 2px solid #333;</code></pre>
+                    Additionally, you can include <code>border-radius</code> in the <code>border</code> shorthand:
+                    <pre><code>border: 2px solid #333;
+    border-radius: 10px;</code></pre>
+                </li>
+            </ul>
+
+            <p>These properties allow you to customize the appearance of borders on HTML elements, providing flexibility
+                in creating various visual styles. Adjust these values according to your design requirements.</p>
+        </div>
+        <div id="chapter9" style="display: none;">
+            <h2>CSS Images</h2>
+
+            <p>Images are an essential part of the website. Images help enhance the website's look.</p>
+
+            <h3>Syntax:</h3>
+            <code>
+            &lt;img src="img_location" alt="alt_text"&gt;
+        </code>
+
+            <p>There are two attributes:</p>
+            <ul>
+                <li><strong>src:</strong> The path of the image.</li>
+                <li><strong>alt:</strong> Alternate text for the image, if the image is not displayed due to any issue.
+                </li>
+            </ul>
+
+            <h3>Example:</h3>
+            <code>
+            &lt;html lang="en"&gt;<br>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;title&gt;CWH&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;img src="./cwh.png" alt="cwh"&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </code>
+
+            <h3>Various Properties:</h3>
+            <p>Image can have multiple properties like height,width,alt,src etc</p>
+
+            <h4>Image Width and Height:</h4>
+            <p>we can set image's particular heeight and width using prpperties heigth and width</p>
+            <code>
+            &lt;img src="./cwh.png" height="300" width="400" alt="cwh"&gt;
+        </code>
+
+            <h4>Internal/External CSS:</h4>
+            <code>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;img {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;width: 600px;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 400px;<br>
+            &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </code>
+
+            <h4>Image Border Radius:</h4>
+            <p>Image border radius can be used to round the corners of the image, following is syntax of it</p>
+            <code>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;img {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 25px;<br>
+            &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </code>
+
+            <h4>Image Responsiveness:</h4>
+            <p>we can give the Responsiveness of images as follows</p>
+            <code>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;img {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;max-width: 100%;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: auto;<br>
+            &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </code>
+
+            <h3>Image Opacity:</h3>
+            <p>opacity means the trancepeancy of the element, highes the opacity lower it transperancy</p>
+            <code>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;img {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 0.7;<br>
+            &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </code>
+
+            <h3>Image Filter:</h3>
+            <p>we can use image filter property to filter image, it syntax as follows</p>
+            <code>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;img {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;filter: grayscale(100%);<br>
+            &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </code>
+
+            <p>Other filter properties like blur, brightness, contrast, invert, saturate, hue-rotate can be applied
+                similarly.</p>
+        </div>
+        <div id="chapter10" style="display: none;">
+            <h2>Font Color</h2>
+            <p>
+                Font color defines the color of the text or typography.
+                <br>
+                <strong>Syntax:</strong>
+                <br>
+                <code>selector {<br> &nbsp;&nbsp; color: red;<br>}</code>
+                <br>
+            </p>
+
+            <!-- Font Size -->
+            <h2>Font Size</h2>
+            <p>
+                The font size property sets the size of the fonts.
+                <br>
+                It has some predefined sizes, such as small, medium, large, larger, etc.
+                <br>
+                The most commonly used units for font size are px (pixels), em (ems), rem (root ems), and percentage
+                (%).
+                <br>
+                <strong>Quick notes:</strong>
+            <ul>
+                <li><code>px:</code> px is the absolute unit. This is useful for setting precise sizes.</li>
+                <li><code>em:</code> em is the relative unit, based on the font size of the parent element.</li>
+                <li><code>rem:</code> rem is the relative unit, based on the font size of the root element, i.e.,
+                    &lt;html&gt;.</li>
+            </ul>
+            <br>
+            <strong>Example:</strong>
+            <pre>
+                <code>
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            #p1 {
+                                font-size: small;
+                            }
+                            #p2 {
+                                font-size: medium;
+                            }
+                            /* ... other styles ... */
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;p id="p1"&gt;font-size: small&lt;/p&gt;
+                        &lt;p id="p2"&gt;font-size: medium&lt;/p&gt;
+                        <!-- ... other paragraphs ... -->
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            </p>
+
+            <!-- Font Style -->
+            <h2>Font Style</h2>
+            <!-- ... Similar structure as above ... -->
+
+            <!-- Font Variant -->
+            <h2>Font Variant</h2>
+            <!-- ... Similar structure as above ... -->
+
+            <!-- Font Weight -->
+            <h2>Font Weight</h2>
+            <!-- ... Similar structure as above ... -->
+
+            <!-- Font Family -->
+            <h2>Font Family</h2>
+            <p>
+                The font family property specifies the font stack. This is used to set the preferred font for the text
+                content.
+                <br>
+                We can define multiple font family names separated by commas based on priority.
+                <br>
+                <strong>Syntax:</strong>
+                <br>
+                <code>selector {<br> &nbsp;&nbsp; font-family: font1, font2, font3;<br>}</code>
+                <br>
+                <strong>Example:</strong>
+            <pre>
+                <code>
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            h1 {
+                                font-family: 'Courier New', Courier, monospace;
+                            }
+                            h2 {
+                                font-family: 'Times New Roman', Times, serif;
+                            }
+                            /* ... other styles ... */
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+                        &lt;h2&gt;Hello World&lt;/h2&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            </p>
+
+            <!-- Generic Font Family -->
+            <h2>Generic Font Family</h2>
+            <p>
+                There are five generic font family names that serve as fallback options when specific fonts are not
+                available:
+                <br>
+                <strong>serif:</strong> generic serif fonts (like Times New Roman).
+                <br>
+                <strong>sans-serif:</strong> generic sans-serif fonts (like Arial or Helvetica).
+                <br>
+                <strong>monospace:</strong> generic monospaced fonts (like Courier New).
+                <br>
+                <strong>cursive:</strong> generic cursive fonts (for handwritten styles).
+                <br>
+                <strong>fantasy:</strong> generic fantasy fonts (for decorative styles).
+                <br>
+                <strong>Tip:</strong> It is recommended to end the font family with any of these generic font family
+                names.
+            </p>
+        </div>
+        <div id="chapter11" style="display: none;">
+            <h2>The Padding Property in CSS</h2>
+
+            <p>In CSS, the <code>padding</code> property is used to set the space between the content of an element and
+                its border. Padding creates an internal space within an element, and it can be applied to various HTML
+                elements such as divs, paragraphs, and more. The <code>padding</code> property is a shorthand property
+                that combines individual properties for each side of the element: top, right, bottom, and left.</p>
+
+            <p>Here's the basic syntax for the <code>padding</code> property:</p>
+
+            <pre><code>padding: top right bottom left;</code></pre>
+
+            <ul>
+                <li><strong>top:</strong> Specifies the padding for the top of the element.</li>
+                <li><strong>right:</strong> Specifies the padding for the right side of the element.</li>
+                <li><strong>bottom:</strong> Specifies the padding for the bottom of the element.</li>
+                <li><strong>left:</strong> Specifies the padding for the left side of the element.</li>
+            </ul>
+
+            <p>You can specify values for each side individually, or you can use fewer values to apply the same padding
+                on multiple sides. Here are some examples:</p>
+
+            <pre><code>/* Same padding on all sides */
+    padding: 10px;
+    
+    /* Vertical padding (top and bottom) is 10px, horizontal padding (left and right) is 20px */
+    padding: 10px 20px;
+    
+    /* Top padding is 5px, right padding is 10px, bottom padding is 15px, left padding is 20px */
+    padding: 5px 10px 15px 20px;</code></pre>
+
+            <p>It's important to note that the <code>padding</code> property adds space inside the element, pushing the
+                content away from the element's borders. It does not affect the element's border or margin.</p>
+        </div>
+        <div id="chapter12" style="display: none;">
+            <h2>The Margin Property in CSS</h2>
+
+            <p>In CSS, the <code>margin</code> property is used to control the space outside an element, affecting its
+                positioning in relation to other elements. Margins create space around the borders of an element,
+                helping control the layout and spacing between elements on a webpage. The <code>margin</code> property
+                is a shorthand property that combines individual properties for each side of the element: top, right,
+                bottom, and left.</p>
+
+            <p>Here's the basic syntax for the <code>margin</code> property:</p>
+
+            <pre><code>margin: top right bottom left;</code></pre>
+
+            <ul>
+                <li><strong>top:</strong> Specifies the margin for the top of the element.</li>
+                <li><strong>right:</strong> Specifies the margin for the right side of the element.</li>
+                <li><strong>bottom:</strong> Specifies the margin for the bottom of the element.</li>
+                <li><strong>left:</strong> Specifies the margin for the left side of the element.</li>
+            </ul>
+
+            <p>You can specify values for each side individually, or you can use fewer values to apply the same margin
+                on multiple sides. Here are some examples:</p>
+
+            <pre><code>/* Same margin on all sides */
+margin: 10px;
+
+/* Vertical margin (top and bottom) is 10px, horizontal margin (left and right) is 20px */
+margin: 10px 20px;
+
+/* Top margin is 5px, right margin is 10px, bottom margin is 15px, left margin is 20px */
+margin: 5px 10px 15px 20px;</code></pre>
+
+            <p>Margins are used to control the spacing between elements, and they do not have a background color or
+                border. The margin space is outside the element's border. If you set a background color for an element,
+                the margin space will not have that color.</p>
+        </div>
+        <div id="chapter13" style="display: none;">
+            <h2>The :hover Pseudo-class in CSS</h2>
+
+            <p>In CSS, the <code>:hover</code> pseudo-class is used to apply styles to an element when a user hovers
+                over it with the mouse cursor. This allows you to create interactive and visually appealing effects on
+                your webpage by changing the appearance of elements in response to user actions.</p>
+
+            <p>Here's the basic syntax for using the <code>:hover</code> pseudo-class:</p>
+
+            <pre><code>selector:hover {
+      /* styles to apply when the element is hovered */
+    }</code></pre>
+
+            <p>Where <em>selector</em> is the HTML element or class/id selector for which you want to define hover
+                styles.</p>
+
+            <h3>Examples:</h3>
+
+            <p><strong>Changing Color on Hover:</strong></p>
+            <pre><code>button:hover {
+      background-color: #4CAF50; /* Green color */
+      color: white;
+    }</code></pre>
+
+            <p><strong>Scaling on Hover:</strong></p>
+            <pre><code>img:hover {
+      transform: scale(1.1);
+    }</code></pre>
+
+            <p><strong>Underlining Links on Hover:</strong></p>
+            <pre><code>a:hover {
+      text-decoration: underline;
+    }</code></pre>
+
+            <p><strong>Displaying Hidden Content on Hover:</strong></p>
+            <pre><code>.hidden-content {
+      display: none;
+    }
+    
+    .parent:hover .hidden-content {
+      display: block;
+    }</code></pre>
+
+            <p>The <code>:hover</code> pseudo-class is not limited to specific types of styles; it can be used to modify
+                various CSS properties, including colors, sizes, positions, and more. It's a powerful tool for creating
+                interactive and dynamic user experiences on your website.</p>
+        </div>
+        <div id="chapter14" style="display: none;">
+            <h2>Styling Links with CSS</h2>
+
+            <p>CSS itself doesn't directly handle the creation or definition of links in the same way it handles styles
+                for elements like paragraphs or headings. However, CSS is often used to style links to make them
+                visually distinctive. Here's how links can be affected using CSS:</p>
+
+            <h3>Styling Link Colors:</h3>
+            <pre><code>
+    /* Unvisited link */
+    a:link {
+      color: blue;
+    }
+    
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    
+    /* Mouse over link */
+    a:hover {
+      color: red;
+    }
+    
+    /* Selected link */
+    a:active {
+      color: orange;
+        </code></pre>
+
+            <h3>Removing Underlines:</h3>
+            <pre><code>
+    /* Remove underlines from all links */
+    a {
+      text-decoration: none;
+    }
+    
+    /* Underline on hover */
+    a:hover {
+      text-decoration: underline;
+        </code></pre>
+
+            <h3>Styling Links in Navigation Menus:</h3>
+            <pre><code>
+    /* Style for navigation menu links */
+    .nav-link {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    /* Highlight the current page */
+    .current-page {
+      background-color: #f0f0f0;
+    }
+    </code></pre>
+
+            <h3>Adding Icons or Background Images:</h3>
+            <pre><code>
+    /* Add a background image to links */
+    a.icon-link {
+      background-image: url('link-icon.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 20px;
+    }
+    </code></pre>
+
+            <p>These are just a few examples of how CSS can be used to style links on a webpage. The actual structure
+                and creation of links are handled in HTML using the <code>&lt;a&gt;</code> (anchor) element. CSS is then
+                used to enhance the visual presentation and user experience of these links.</p>
+        </div>
+        <div id="chapter15" style="display: none;">
+            <h2>Styling Buttons with CSS</h2>
+
+            <p>CSS can be used to style and enhance the appearance of buttons on a webpage. Buttons are often created
+                using the <code>&lt;button&gt;</code> element in HTML, and CSS is used to define their visual style.
+                Here are some common techniques for styling buttons with CSS:</p>
+
+            <h3>Basic Button Styling:</h3>
+            <pre><code>
+    /* Basic button styling */
+    button {
+      background-color: #4CAF50; /* Green background color */
+      color: white;             /* White text color */
+      padding: 10px 20px;        /* Padding for the button */
+      border: none;             /* No border */
+      border-radius: 5px;        /* Rounded corners */
+      cursor: pointer;          /* Cursor on hover */
+    }
+    </code></pre>
+
+            <h3>Hover Effects:</h3>
+            <pre><code>
+    /* Hover effect */
+    button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+    </code></pre>
+
+            <h3>Pressed/Active State:</h3>
+            <pre><code>
+    /* Pressed/Active state */
+    button:active {
+      background-color: #367c3d; /* Even darker green when pressed */
+    }
+    </code></pre>
+
+            <h3>Disabled State:</h3>
+            <pre><code>
+    /* Disabled state */
+    button:disabled {
+      background-color: #aaaaaa; /* Gray background for disabled state */
+      color: #666666;            /* Darker text color for disabled state */
+      cursor: not-allowed;       /* Disabled cursor */
+    }
+    </code></pre>
+
+            <h3>Button with Icon:</h3>
+            <pre><code>
+    /* Button with icon */
+    .icon-button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      position: relative;
+    }
+    
+    .icon-button::before {
+      content: url('icon.png'); /* Use the path to your icon image */
+      margin-right: 10px;
+    }
+    </code></pre>
+
+            <h3>Button Groups:</h3>
+            <pre><code>
+    /* Button group */
+    .button-group {
+      display: inline-block;
+    }
+    
+    .button-group button {
+      margin-right: 5px;
+    }
+    </code></pre>
+
+            <p>These examples demonstrate how CSS can be used to style buttons. When creating buttons, it's common to
+                consider factors such as color, padding, border, and additional effects to provide a visually appealing
+                and user-friendly interface. The actual button elements are created in HTML, and CSS is applied to
+                enhance their appearance and behavior.</p>
+        </div>
+        <div id="chapter16" style="display: none;">
+            <h2>Float Property in CSS</h2>
+
+            <p>The float property in CSS is used to specify how an element should be positioned within its containing
+                element, allowing it to be moved to the left or right, and the surrounding content will flow around it.
+                The float property is commonly used for creating layouts where elements are arranged side by side.</p>
+
+            <h3>Float Values:</h3>
+            <pre><code>
+    .left-float {
+      float: left;
+    }
+    
+    .right-float {
+      float: right;
+    </code></pre>
+
+            <h3>Effects on Layout:</h3>
+            <pre><code>
+    .main-content {
+      width: 70%;
+      float: left;
+    }
+    
+    .sidebar {
+      width: 30%;
+      float: left;
+    </code></pre>
+
+            <h3>Clearing Floats:</h3>
+            <pre><code>
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    </code></pre>
+            <p>Apply the clearfix class to a container that contains floated elements to ensure proper clearing.</p>
+
+            <h3>Issues and Alternatives:</h3>
+            <pre><code>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    </code></pre>
+            <p>In this example, the .container class uses flexbox to create a layout with elements evenly spaced.</p>
+
+            <p>It's worth noting that the float property was initially introduced for layout purposes but is now often
+                used for non-layout purposes, such as text wrapping around images. For complex layouts, consider using
+                newer layout techniques like Flexbox or Grid, as they provide more powerful and predictable ways to
+                structure your page.</p>
+        </div>
+        <div id="chapter17" style="display: none;">
+            <h2>Position Property in CSS</h2>
+
+            <p>In CSS, the position property is used to control the positioning of an element within its containing
+                element. The position property can take several values, each defining a different positioning method.
+                Here are the main values for the position property:</p>
+
+            <h3>Static Position:</h3>
+            <pre><code>
+    .static-example {
+      position: static;
+    }
+    </code></pre>
+
+            <h3>Relative Position:</h3>
+            <pre><code>
+    .relative-example {
+      position: relative;
+      top: 10px;
+      left: 20px;
+    }
+    </code></pre>
+
+            <h3>Absolute Position:</h3>
+            <pre><code>
+    .absolute-example {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+    </code></pre>
+
+            <h3>Fixed Position:</h3>
+            <pre><code>
+    .fixed-example {
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    </code></pre>
+
+            <h3>Sticky Position:</h3>
+            <pre><code>
+    .sticky-example {
+      position: sticky;
+      top: 20px;
+    }
+    </code></pre>
+
+            <p>These positioning values can be used to create various layout designs and effects. It's important to
+                understand how each value works and how they interact with other layout properties. Additionally, keep
+                in mind that relative, absolute, fixed, and sticky positioning creates a new stacking context, which can
+                affect how elements are layered on top of each other.</p>
+        </div>
+
+        <div id="chapter18" style="display: none;">
+            <h2>z-index Property in CSS</h2>
+
+            <p>In CSS, the z-index property is used to control the stacking order of positioned elements along the
+                z-axis (the axis perpendicular to the screen). The z-index property determines the order in which
+                elements are layered on top of each other when they overlap. Elements with a higher z-index value are
+                positioned in front of elements with a lower z-index value.</p>
+
+            <h3>Default Stacking Order:</h3>
+            <pre><code>
+    .default-order {
+      /* Elements are initially stacked in the order they appear in the HTML document */
+    }
+    </code></pre>
+
+            <h3>z-index Values:</h3>
+            <pre><code>
+    .element1 {
+      z-index: 2;
+    }
+    
+    .element2 {
+      z-index: 1;
+    }
+    </code></pre>
+
+            <p>In this example, element1 will be positioned in front of element2 because it has a higher z-index.</p>
+
+            <h3>Stacking Context Hierarchy:</h3>
+            <pre><code>
+    .stacking-context {
+      position: relative;
+      /* Creating a stacking context */
+      z-index: 1;
+    }
+    
+    .higher-z-index {
+      position: absolute;
+      z-index: 2;
+    }
+    </code></pre>
+
+            <h3>Negative Values:</h3>
+            <pre><code>
+    .behind {
+      z-index: -1;
+    }
+    </code></pre>
+
+            <p>In this case, the element with a z-index of -1 will be positioned behind elements with higher or zero
+                z-index values.</p>
+
+            <p>It's important to use the z-index property carefully, as applying large values indiscriminately can lead
+                to confusing and difficult-to-maintain code. It's often best to use z-index sparingly and strategically,
+                especially in complex layouts where layering is essential.</p>
+        </div>
+
+        <div id="chapter19" style="display: none;">
+            <h2>Display Property in CSS</h2>
+
+            <p>The display property in CSS is used to control the layout behavior of an element. It defines how an
+                element should be rendered in the document flow, affecting its visibility, box type, and interaction
+                with other elements. The display property can take various values, each defining a different layout
+                behavior. Here are some common values for the display property:</p>
+
+            <h3>Display: block</h3>
+            <pre><code>
+    .block-element {
+      display: block;
+    }
+    </code></pre>
+
+            <h3>Display: inline</h3>
+            <pre><code>
+    .inline-element {
+      display: inline;
+    }
+    </code></pre>
+
+            <h3>Display: inline-block</h3>
+            <pre><code>
+    .inline-block-element {
+      display: inline-block;
+    }
+    </code></pre>
+
+            <h3>Display: flex</h3>
+            <pre><code>
+    .flex-container {
+      display: flex;
+    }
+    </code></pre>
+
+            <h3>Display: grid</h3>
+            <pre><code>
+    .grid-container {
+      display: grid;
+    }
+    </code></pre>
+
+            <h3>Display: none</h3>
+            <pre><code>
+    .hidden-element {
+      display: none;
+    }
+    </code></pre>
+
+            <h3>Display: table, table-row, table-cell</h3>
+            <pre><code>
+    .table-container {
+      display: table;
+    }
+    
+    .table-row {
+      display: table-row;
+    }
+    
+    .table-cell {
+      display: table-cell;
+    }
+    </code></pre>
+
+            <p>These are just a few examples of the display property values. The choice of the display value depends on
+                the desired layout and the relationships between elements in a design. It's common to use a combination
+                of these values to create complex layouts and achieve specific design goals.</p>
+        </div>
+
+        <div id="chapter20" style="display: none;">
+            <h2>Flexbox Layout in CSS</h2>
+
+            <p>Flexbox, or the Flexible Box Layout, is a layout model in CSS designed to create complex layouts more
+                efficiently and with less code. The Flexbox layout model provides an easy and predictable way to
+                distribute space and align items within a container, even when the size of the items is unknown or
+                dynamic.</p>
+
+            <h3>Flex Container:</h3>
+            <pre><code>
+.flex-container {
+  display: flex;
+}
+</code></pre>
+
+            <h3>Flex Direction:</h3>
+            <pre><code>
+.flex-container-row {
+  flex-direction: row; /* or column, row-reverse, column-reverse */
+}
+</code></pre>
+
+            <h3>Flex Items:</h3>
+            <pre><code>
+.flex-item {
+  /* Styles for flex items */
+}
+</code></pre>
+
+            <h3>Flex Wrap:</h3>
+            <pre><code>
+.flex-container-wrap {
+  flex-wrap: wrap; /* or nowrap, wrap-reverse */
+}
+</code></pre>
+
+            <h3>Justify Content:</h3>
+            <pre><code>
+.flex-container-justify {
+  justify-content: space-between; /* or flex-start, flex-end, center, space-around, space-evenly */
+}
+</code></pre>
+
+            <h3>Align Items:</h3>
+            <pre><code>
+.flex-container-align {
+  align-items: center; /* or flex-start, flex-end, stretch */
+}
+</code></pre>
+
+            <h3>Align Self:</h3>
+            <pre><code>
+.flex-item-align-self {
+  align-self: flex-end; /* or flex-start, center, stretch */
+}
+</code></pre>
+
+            <h3>Flex Property:</h3>
+            <pre><code>
+.flex-item-flex {
+  flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+}
+</code></pre>
+
+            <p>Flexbox is widely used for creating responsive layouts and aligning items in a more dynamic and efficient
+                way compared to traditional layout models. It simplifies the process of designing complex interfaces and
+                is particularly useful when dealing with variable content or unknown dimensions.</p>s
+        </div>
+
+        <div id="chapter21" style="display: none;">
+            <h2>CSS Grid Layout</h2>
+
+            <p>
+                CSS Grid Layout, often referred to as Grid, is a powerful two-dimensional layout system that allows you
+                to create complex grid-based layouts with ease. It provides a set of properties and values that enable
+                precise control over the positioning and sizing of elements in both rows and columns.
+            </p>
+
+            <h3>Grid Container:</h3>
+            <pre><code>
+    .grid-container {
+      display: grid;
+    }
+    </code></pre>
+
+            <h3>Grid Template Columns and Rows:</h3>
+            <pre><code>
+    .grid-container-template {
+      grid-template-columns: 100px 200px 1fr;
+      grid-template-rows: auto 50% 2fr;
+    }
+    </code></pre>
+
+            <h3>Grid Gap:</h3>
+            <pre><code>
+    .grid-container-gap {
+      grid-gap: 10px;
+    }
+    </code></pre>
+
+            <h3>Grid Areas:</h3>
+            <pre><code>
+    .grid-container-areas {
+      grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+    }
+    </code></pre>
+
+            <h3>Grid Items Placement:</h3>
+            <pre><code>
+    .grid-item {
+      grid-column: 2 / 4;
+      grid-row: 1 / 3;
+    }
+    </code></pre>
+
+            <h3>Auto Placement:</h3>
+            <pre><code>
+    .grid-container-auto-flow {
+      grid-auto-flow: column;
+    }
+    </code></pre>
+
+            <h3>Responsive Layouts:</h3>
+            <pre><code>
+    @media screen and (max-width: 600px) {
+      .grid-container-responsive {
+        grid-template-columns: 1fr;
+      }
+    }
+    </code></pre>
+
+            <p>
+                CSS Grid Layout is widely used for designing modern and responsive web layouts. It provides a high level
+                of control and flexibility, making it a powerful tool for building sophisticated designs.
+            </p>
+        </div>
+
+        <div id="chapter22" style="display: none;">
+            <h2>CSS Media Queries</h2>
+
+            <p>
+                CSS Media Queries are a feature that allows you to apply different styles to your website based on the
+                characteristics of the device or browser displaying the content. Media queries are often used for
+                creating responsive designs that adapt to various screen sizes, resolutions, and orientations.
+            </p>
+
+            <h3>Simple Width-based Media Query:</h3>
+            <div class="media-query-example">
+                Styles for small screens
+            </div>
+
+            <h3>Width Range Media Query:</h3>
+            <div class="media-query-example">
+                Styles for medium-sized screens
+            </div>
+
+            <h3>Orientation-based Media Query:</h3>
+            <div class="media-query-example">
+                Styles for portrait orientation
+            </div>
+
+            <h3>Retina Display Media Query:</h3>
+            <div class="media-query-example">
+                Styles for high-resolution displays
+            </div>
+
+            <h3>Combining Media Queries:</h3>
+            <div class="combined-media-query">
+                Styles for screens wider than 600px
+            </div>
+            <div class="combined-media-query">
+                Styles for screens narrower than 600px
+            </div>
+        </div>
+
+
+        <script>
+            // Show the content for the first chapter initially
+            showChapter(1);
+        </script>
+
+</body>
+
+</html>

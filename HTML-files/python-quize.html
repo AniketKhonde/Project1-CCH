@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <script src="../javascript-files/python-quize.js" defer></script>
+    <link rel="stylesheet" href="../CSS-files/python-quize.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1 class="header">Welcome to Pyhon Quiz</h1>
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is the purpose of the Python <code>range()</code> function?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) Generate a random number</label>
+                <label><input type="radio" name="q1" value="b"> b) Convert a string to a list</label>
+                <label><input type="radio" name="q1" value="c"> c) Generate a sequence of numbers</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>2. How do you open a file in Python using the <code>with</code> statement?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) <code>file = open("filename.txt", "r")</code></label>
+                <label><input type="radio" name="q2" value="b"> b) <code>open("filename.txt", "r") as file</code></label>
+                <label><input type="radio" name="q2" value="c"> c) <code>with open("filename.txt", "r") as file</code></label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>3. What does the <code>__init__</code> method in Python do?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) Initialize a list</label>
+                <label><input type="radio" name="q3" value="b"> b) Initialize a dictionary</label>
+                <label><input type="radio" name="q3" value="c"> c) Initialize an object's attributes</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>4. In Python, what is the purpose of the <code>__str__</code> method?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) Convert a string to uppercase</label>
+                <label><input type="radio" name="q4" value="b"> b) Display the string representation of an object</label>
+                <label><input type="radio" name="q4" value="c"> c) Split a string into a list</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>5. How do you check if a key exists in a Python dictionary?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) <code>if key in dictionary:</code></label>
+                <label><input type="radio" name="q5" value="b"> b) <code>if dictionary.hasKey(key):</code></label>
+                <label><input type="radio" name="q5" value="c"> c) <code>if key in dictionary.keys():</code></label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>6. What is the purpose of the Python <code>super()</code> function?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> a) Call a superclass method</label>
+                <label><input type="radio" name="q6" value="b"> b) Create a new instance of a class</label>
+                <label><input type="radio" name="q6" value="c"> c) Access the current instance of a class</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>7. How do you remove an item from a list in Python?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> a) <code>list.remove(item)</code></label>
+                <label><input type="radio" name="q7" value="b"> b) <code>list.delete(item)</code></label>
+                <label><input type="radio" name="q7" value="c"> c) <code>list.pop(index)</code></label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>8. In Python, what is the purpose of the <code>try</code> and <code>except</code> blocks?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> a) Execute a block of code repeatedly</label>
+                <label><input type="radio" name="q8" value="b"> b) Define a function</label>
+                <label><input type="radio" name="q8" value="c"> c) Handle exceptions or errors</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>9. What does the <code>import random</code> statement do in Python?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> a) Import the entire random module</label>
+                <label><input type="radio" name="q9" value="b"> b) Generate a random number between 0 and 1</label>
+                <label><input type="radio" name="q9" value="c"> c) Allow access to random functions</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>10. How do you define a function in Python?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> a) <code>def function_name:</code></label>
+                <label><input type="radio" name="q10" value="b"> b) <code>function function_name:</code></label>
+                <label><input type="radio" name="q10" value="c"> c) <code>def function_name():</code></label>
+            </div>
+        </div>
+
+        <button id="submit-btn" class="submit-btn1" onclick="submitQuiz()">Submit</button>
+        <button onclick="gohome()" class="submit-btn1">Back</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraftHub</title>
+    <link rel="icon" sizes="192x192" href="../imgaes/code-icon.ico">
+    <link rel="stylesheet" href="../CSS-files/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../javascript-files/index-script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="pageContent">
+        <!-- navbar section starts here -->
+    <div class="stick">
+        <div class="navbar">
+            <div class="namelogo">
+                <span class="name">
+                    <i class="fa-solid fa-code "></i>
+                    CodeCrapftHub
+                </span>
+            </div>
+            <div class="navigations">
+                <p class="home underline" onclick="gohome()">Home</p>
+                <p class="blog underline" onclick="goblog()">Blog</p>
+                <p class="notes underline" onclick="gonotes()">Notes</p>
+                <p class="about-me underline" onclick="goquize()">Solve Quize</p>
+                <p class="contact underline" onclick="gocontact()">Contact</p>
+            </div>
+        </div>
+        <div class="navigation2">
+            <i class="fa-solid fa-house home-logo" onclick="gohome()"></i>
+            <div class="navs">
+                <p class="html underline" onclick="changePage1()">HTML</p>
+                <P class="css underline" onclick="changePage2()">CSS</P>
+                <p class="javascript underline" onclick="changePage3()">Javascript</p>
+                <p class="dsa underline" onclick="changePage4()">DSA</p>
+            </div>
+        </div>
+    </div>
+        <!-- main section starts here -->
+        <div class="main">
+            <div class="half-image">
+            </div>
+            <div class="half-text">
+                <div class="text-content">
+                    <h1 class="heading">Welcome to <span style="color:rgb(126 34 206);">CodeCraftHub</span></h1>
+                        <div id="text-container" class="textcontainer">
+                            <h2 id="city" class="text"></h2><span class="cursor" class="mm"></span>
+                        </div>
+                    <p class="message">Welcome to project! 🚀 Discover a treasure trove of notes, engaging blogs, and challenging DSA questions. Dive in, learn, and contribute. Let's make knowledge a shared adventure! 📚💡 #WelcomeToTheProject</p>
+                    <div class="cartoon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="html-text">
+                <div class="alpha1"> 
+                    <h1 class="alpha-heading1">HTML</h1>
+                    <p class="alpha-para1">Language for building web pages</p>
+                     <button class="alpha-btn" onclick="changePage1()">learn HTML</button>
+                    <button class="alpha-btn" onclick="gonotes()">View Notes</button>
+                    <button class="alpha-btn" onclick="goquize()">Solve Quize</button>
+                </div> 
+                <img src="../imgaes/html-image.jpg" alt="" class="alpha-image1">
+            </div>
+        
+            <div class="css-text">
+                <div class="alpha1">
+                    <h1 class="alpha-heading2">CSS</h1>
+                    <p class="alpha-para2">Improve Look of web pages</p>
+                    <button class="alpha-btn" onclick="changePage2()">learn CSS</button>
+                    <button class="alpha-btn" onclick="gonotes()">View Notes</button>
+                    <button class="alpha-btn" onclick="goquize()">Solve Quize</button>
+                </div>
+                <img src="../imgaes/css-image.jpg" alt="" class="alpha-image1">
+        
+            </div>
+        
+            <div class="javascript-text">
+                <div class="alpha1">
+                    <h1 class="alpha-heading3">Javascript</h1>
+                    <p class="alpha-para3">Add logics to web pages</p>
+                    <button class="alpha-btn" onclick="changePage3()">learn Javascritp</button>
+                    <button class="alpha-btn" onclick="gonotes()">View Notes</button>
+                    <button class="alpha-btn" onclick="goquize()">Solve Quize</button>
+                </div>
+                <img src="../imgaes/javascript-image.jpg" alt="" class="alpha-image1">
+        
+            </div>
+        
+            <div class="dsa-text">
+                <div class="alpha1">
+                    <h1 class="alpha-heading4">DSA</h1>
+                    <p class="alpha-para4" >Solve Problems to improve logic</p>
+                    <button class="alpha-btn" onclick="changePage4()">Solve Problems</button>
+                    <button class="alpha-btn" onclick="gonotes()">View Notes</button>
+                    <button class="alpha-btn" onclick="goquize()">Solve Quize</button>
+                </div>
+                <img src="../imgaes/dsa-image.png" alt="" class="alpha-image1">
+        </div>
+        <div class="last">
+            <footer onclick="alert('Footer Clicked!')">
+                <span>Copyright &copy; 2024 CodeCraftHub</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

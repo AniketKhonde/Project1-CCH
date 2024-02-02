@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    left: 130px;
+    width: 82vw;
+}
+.btn{
+    background-color: beige;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+.navbar {
+    width: 12vw;
+    padding: 1vw;
+    background-color: #d3d1d1;
+    overflow-y: auto;
+    height: 100vh;
+    position: fixed;
+}
+
+.navbar span {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 4vw;
+    padding: 2vw;
+    height: 100vh;
+}
+
+#content {
+    padding: 1px;
+    margin-top: 1vh;
+    margin-left: 10vw;
+}
